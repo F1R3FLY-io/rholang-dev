@@ -1,0 +1,79 @@
+# Site settings
+title: Rholang Programming Language
+description: Community documentation for Rholang, the reflective higher-order process calculus programming language designed for the F1r3fly blockchain platform. Maintained by F1r3fly.io.
+baseurl: ""
+url: "https://F1r3fly-io.github.io/rholang-dev"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+navigation:
+  - title: Docs
+    url: /docs/
+  - title: Tutorials
+    url: /tutorials/
+  - title: dApps
+    url: /dapps/
+  - title: Blog
+    url: /blog/
+
+# Social links - F1r3fly.io
+github_username: F1r3fly-io
+discord_url: https://discord.gg/nCQxEwUd
+
+# Official RChain links
+rchain_github: rchain
+rchain_twitter: rchain_coop
+rchain_discord: https://discord.gg/NWkQnfH
+
+# Code highlighting
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Collections for blog posts
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "docs"
+    values:
+      layout: "page"
+  - scope:
+      path: "tutorials"
+    values:
+      layout: "page"
+  - scope:
+      path: "dapps"
+    values:
+      layout: "page"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - CLAUDE.md

@@ -6,6 +6,8 @@
 - The site provides comprehensive documentation, tutorials, examples, and reference materials for Rholang developers
 - This project will use Jekyll or similar static site generator for GitHub Pages deployment
 - Focus on clear, accessible documentation with practical examples and learning resources
+- All code produced by the F1r3fly-io organization uses the Apache License
+- The code and the documentation in this repository and organzation are developed by the **F1r3fly.io Limited Cooperative Association** -- not the RCHAIN Coop
 
 ## Project Structure
 - Keep the current project structure up to date in the [README.md](./README.md)
@@ -36,6 +38,7 @@
 - **Cross-References**: Link between related concepts and sections
 - **Accessibility**: Ensure content is accessible with proper headings and alt text
 - **Consistency**: Maintain consistent terminology and formatting throughout
+- **Terse**: Focus on clear and concise examples without use of emoticons or other distracting text
 
 ## Documentation Best Practices
 - Start with user needs and learning objectives

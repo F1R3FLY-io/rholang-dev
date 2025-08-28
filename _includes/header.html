@@ -1,0 +1,29 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      <img src="{{ "/assets/images/rholang-logo.svg" | relative_url }}" alt="{{ site.title | escape }}" class="site-logo">
+      {{ site.title | escape }}
+    </a>
+
+    {% include navigation.html %}
+
+    <div class="social-links">
+      {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}" title="F1r3fly.io GitHub">
+          <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
+        </a>
+      {% endif %}
+      {% if site.discord_url %}
+        <a href="{{ site.discord_url }}" title="F1r3fly.io Discord">
+          <span class="discord-icon">Discord</span>
+        </a>
+      {% endif %}
+      {% if site.rchain_github %}
+        <a href="https://github.com/{{ site.rchain_github }}" title="Official RChain GitHub">
+          <svg class="svg-icon rchain-link"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
+          <small>RChain</small>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</header>
