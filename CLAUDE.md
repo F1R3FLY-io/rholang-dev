@@ -53,7 +53,7 @@
 ## Rholang-Specific Content Areas
 - **Language Fundamentals**: Process calculus concepts, channel operations, pattern matching
 - **Syntax Reference**: Complete grammar and language constructs
-- **RhoVM**: Virtual machine concepts and execution model
+- **RSpace++**: Execution environment concepts and execution model
 - **Blockchain Integration**: RChain platform integration and deployment
 - **Smart Contracts**: Contract development patterns and examples
 - **Concurrency Patterns**: Parallel and concurrent programming techniques

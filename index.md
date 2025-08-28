@@ -32,7 +32,7 @@ title: Home
       <p>Compile code written in Rholang</p>
       <ul>
         <li>Complete asynchronous language</li>
-        <li>Runtime engine written in type safe language (Scala)</li>
+        <li>RSpace++ execution environment written in type safe language (Rust)</li>
         <li>Concurrency built into the language</li>
       </ul>
     </div>
@@ -58,7 +58,7 @@ title: Home
 
   <section class="consensus-layer">
     <h3>A new consensus layer</h3>
-    <p>Most blockchains are running serial like a chain, with that, throughput is very limited. The F1r3fly blockchain uses DAGs (directed acyclic graphs) that have a tree-like structure and scale massively. F1r3fly uses proof of stake consensus mechanisms. Additionally, Rholang code is fully verified and the F1r3fly project code is written in Scala. With that, Rholang provides strong safety guarantees for blockchain applications.</p>
+    <p>Most blockchains are running serial like a chain, with that, throughput is very limited. The F1r3fly blockchain uses DAGs (directed acyclic graphs) that have a tree-like structure and scale massively. F1r3fly uses proof of stake consensus mechanisms. Additionally, Rholang code is formally verified using OSLF (Operational Semantics in Logical Form) and the F1r3fly project uses the RSpace++ execution environment written in Rust. With that, Rholang provides strong safety guarantees for blockchain applications.</p>
   </section>
 
   <section class="community">
@@ -129,6 +129,12 @@ new helloworld, stdout(`rho:io:stdout`) in {
     <h3>F1r3fly Blockchain</h3>
     <p>F1r3fly blockchain implementation and development</p>
     <a href="https://github.com/F1R3FLY-io/f1r3fly/">Read more</a>
+  </div>
+
+  <div class="resource-item">
+    <h3>OSLF (Formal Verification)</h3>
+    <p>Operational Semantics in Logical Form for formal verification of Rholang code</p>
+    <a href="https://github.com/F1R3FLY-io/oslf">Read more</a>
   </div>
 
   <div class="resource-item">

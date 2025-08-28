@@ -6,7 +6,7 @@ description: Introduction to the Rholang programming language
 
 # Rholang
 
-Rholang is a reflective, concurrent programming language built on the rho-calculus, designed specifically for blockchain and distributed computing applications. Unlike traditional programming languages based on lambda calculus, Rholang's foundation in process calculus makes it naturally concurrent and well-suited for distributed systems.
+Rholang is a reflective, concurrent programming language built on the rho-calculus, designed specifically for blockchain and distributed computing applications. Unlike traditional programming languages based on lambda calculus, Rholang's foundation in process calculus makes it naturally concurrent and well-suited for distributed systems. Rholang executes on the RSpace++ execution environment, implemented in Rust for performance and safety.
 
 ## Key Features
 
@@ -15,6 +15,7 @@ Rholang is a reflective, concurrent programming language built on the rho-calcul
 - **Process-oriented**: Based on process calculus rather than lambda calculus
 - **Blockchain-native**: Designed specifically for the F1r3fly blockchain platform
 - **Type-safe**: Strong type system prevents common programming errors
+- **Formally Verified**: Code verification using OSLF (Operational Semantics in Logical Form)
 
 ## Core Concepts
 
@@ -26,6 +27,9 @@ Processes communicate by sending and receiving messages on channels, enabling sa
 
 ### Pattern Matching
 Rholang provides powerful pattern matching capabilities for deconstructing data and controlling program flow.
+
+### Formal Verification
+Rholang code can be formally verified using OSLF (Operational Semantics in Logical Form), ensuring mathematical correctness and safety properties. This provides strong guarantees about program behavior and helps prevent bugs before deployment.
 
 ## Getting Started
 
