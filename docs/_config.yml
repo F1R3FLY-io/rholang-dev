@@ -10,7 +10,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 # URL settings
 baseurl: "/rholang-dev" # the subpath of your site, e.g. /blog
-url: "https://nashef.github.io" # the base hostname & protocol for your site
+url: "https://f1r3fly.io" # the base hostname & protocol for your site
 
 # Build settings
 # Comment out 'theme' for GitHub Pages, use remote_theme instead
