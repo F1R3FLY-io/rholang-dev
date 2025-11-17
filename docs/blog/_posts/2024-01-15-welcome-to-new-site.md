@@ -12,7 +12,6 @@ We're excited to announce the launch of our new community and documentation webs
 
 ### Community-First Approach
 The new site isn't just about documentation—it's a hub for the entire Rholang community. You'll find:
-- Project showcases
 - Community resources
 - Events and meetups
 - Contributing guides
