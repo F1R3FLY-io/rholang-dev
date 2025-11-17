@@ -21,10 +21,9 @@ Join the Rholang community at conferences, meetups, and online events.
 ### 💻 Monthly Developer Calls
 **When**: First Thursday of each month, 5:00 PM UTC  
 **Where**: [Discord](https://discord.gg/NWkQnfH)  
-**Topics**: 
+**Topics**:
 - Recent developments
 - Community Q&A
-- Project showcases
 - Technical discussions
 
 ### 🏗️ Hackathon: Build on RChain

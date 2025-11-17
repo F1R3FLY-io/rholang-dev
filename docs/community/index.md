@@ -56,4 +56,3 @@ Regular CASPER research presentations by Greg Meredith
 - [Contributing Guide](contribute.html)
 - [Governance Structure](governance.html)
 - [Events Calendar](events.html)
-- [Project Showcase](showcase.html)
