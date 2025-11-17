@@ -1,0 +1,19 @@
+# Jekyll build artifacts
+docs/_site/
+docs/.sass-cache/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+docs/vendor/
+docs/.bundle/
+
+# macOS
+.DS_Store
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+rholang.org/

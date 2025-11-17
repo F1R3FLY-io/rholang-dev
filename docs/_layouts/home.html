@@ -1,0 +1,139 @@
+---
+layout: default
+---
+
+<div class="home-container">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Rholang</h1>
+      <p class="hero-tagline">{{ site.description }}</p>
+      <div class="hero-actions">
+        <a href="{{ '/learn/getting-started/' | relative_url }}" class="btn btn-primary">Get Started</a>
+        <a href="{{ '/reference/language/' | relative_url }}" class="btn btn-secondary">Documentation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Rholang Section -->
+  <section class="features">
+    <div class="container">
+      <h2>Why Rholang?</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Concurrent by Design</h3>
+          <p>Built on reflective higher-order calculus for true concurrent programming</p>
+        </div>
+        <div class="feature">
+          <h3>Blockchain Ready</h3>
+          <p>Designed for smart contracts with formal verification capabilities</p>
+        </div>
+        <div class="feature">
+          <h3>Scalable</h3>
+          <p>DAG structure and Proof of Stake for high throughput</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Start -->
+  <section class="quick-start">
+    <div class="container">
+      <h2>Quick Example</h2>
+      <div class="code-example">
+        {% highlight rholang %}
+new helloWorld, stdout(`rho:io:stdout`) in {
+  contract helloWorld(@name) = {
+    stdout!(["Hello, ", name, "!"])
+  } |
+  helloWorld!("World")
+}
+        {% endhighlight %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section class="community">
+    <div class="container">
+      <h2>Join the Community</h2>
+      <div class="community-stats">
+        <div class="stat">
+          <span class="stat-number">1,500+</span>
+          <span class="stat-label">Community Members</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Contributors</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">20+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+      </div>
+      <div class="community-links">
+        <a href="https://discord.gg/NWkQnfH" class="community-link">
+          <svg class="icon icon-discord" width="24" height="24"><use xlink:href="#icon-discord"></use></svg>
+          Discord
+        </a>
+        <a href="https://github.com/rchain" class="community-link">
+          <svg class="icon icon-github" width="24" height="24"><use xlink:href="#icon-github"></use></svg>
+          GitHub
+        </a>
+        <a href="https://twitter.com/rchain_coop" class="community-link">
+          <svg class="icon icon-twitter" width="24" height="24"><use xlink:href="#icon-twitter"></use></svg>
+          Twitter
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Updates -->
+  {% if site.posts.size > 0 %}
+  <section class="latest-updates">
+    <div class="container">
+      <h2>Latest Updates</h2>
+      <div class="posts-grid">
+        {% for post in site.posts limit:3 %}
+        <article class="post-card">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <time>{{ post.date | date: "%B %d, %Y" }}</time>
+          <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+        </article>
+        {% endfor %}
+      </div>
+      <a href="{{ '/blog/' | relative_url }}" class="view-all">View all posts →</a>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Resources -->
+  <section class="resources">
+    <div class="container">
+      <h2>Resources</h2>
+      <div class="resource-grid">
+        <a href="{{ '/learn/tutorials/' | relative_url }}" class="resource-card">
+          <h3>📚 Tutorials</h3>
+          <p>Step-by-step guides to learn Rholang</p>
+        </a>
+        <a href="{{ '/reference/api/' | relative_url }}" class="resource-card">
+          <h3>📖 API Reference</h3>
+          <p>Complete API documentation</p>
+        </a>
+        <a href="{{ '/learn/examples/' | relative_url }}" class="resource-card">
+          <h3>💻 Examples</h3>
+          <p>Code examples and patterns</p>
+        </a>
+        <a href="{{ '/community/showcase/' | relative_url }}" class="resource-card">
+          <h3>🚀 Showcase</h3>
+          <p>Projects built with Rholang</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content (if any) -->
+  <div class="home-content">
+    {{ content }}
+  </div>
+</div>

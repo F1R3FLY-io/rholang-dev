@@ -1,0 +1,165 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that.
+
+title: Rholang
+description: >- # this means to ignore newlines until "baseurl:"
+  A reflective higher-order concurrent programming language
+  designed for blockchain and distributed computing.
+
+# URL settings
+baseurl: "/rholang-dev" # the subpath of your site, e.g. /blog
+url: "https://nashef.github.io" # the base hostname & protocol for your site
+
+# Build settings
+# Comment out 'theme' for GitHub Pages, use remote_theme instead
+# theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.7.0
+
+# Just the Docs theme configuration
+color_scheme: light
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Enable or disable the site search
+enable_search_highlight: true
+
+# Heading anchor links appear on hover over h1-h6 tags
+heading_anchors: true
+
+# Footer content
+footer_content: "Copyright &copy; 2024 Rholang Community. Distributed under an open source license."
+
+# Footer last edited timestamp
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p"
+
+# GitHub repository link (appears in top right)
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/YOUR_USERNAME/YOUR_REPOSITORY"
+gh_edit_branch: "main"
+gh_edit_source: docs
+gh_edit_view_mode: "tree"
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Code copy button
+enable_copy_code_button: true
+
+# Navigation structure
+nav_enabled: false # Disabled as we're using custom top navigation
+nav_sort: case_sensitive # Capital letters sorted before lowercase
+
+# Custom assets
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# External navigation links
+nav_external_links:
+  - title: Rholang on GitHub
+    url: https://github.com/rholang
+    hide_icon: false
+
+# Collections for organizing content
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+  learn:
+    output: true
+    permalink: /learn/:path/
+  reference:
+    output: true
+    permalink: /reference/:path/
+  community:
+    output: true
+    permalink: /community/:path/
+
+# Navigation structure
+just_the_docs:
+  collections:
+    learn:
+      name: Learn
+      nav_order: 1
+    reference:
+      name: Reference
+      nav_order: 2
+    community:
+      name: Community
+      nav_order: 3
+
+# Blog configuration
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Rholang Team"
+  - scope:
+      path: "learn"
+    values:
+      layout: "default"
+      parent: "Learn"
+  - scope:
+      path: "reference"
+    values:
+      layout: "default"
+      parent: "Reference"
+  - scope:
+      path: "community"
+    values:
+      layout: "default"
+      parent: "Community"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jekyll-remote-theme
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .jekyll-metadata
+  - PLAN.md
+  - rholang.org/
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Compress HTML
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false

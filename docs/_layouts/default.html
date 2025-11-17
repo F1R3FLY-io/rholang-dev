@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% if site.plugins contains "jekyll-seo-tag" %}
+    {% seo %}
+  {% else %}
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+  {% endif %}
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
+  {% if site.search_enabled != false %}
+    <script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
+  {% endif %}
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+      </div>
+      
+      <button class="mobile-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item {% if page.url == '/' %}active{% endif %}">
+            <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+          </li>
+          
+          <!-- Learn Dropdown -->
+          <li class="nav-item">
+            <a href="{{ '/learn/' | relative_url }}" class="nav-link has-dropdown">Learn</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ '/learn/getting-started/' | relative_url }}">Getting Started</a></li>
+              <li><a href="{{ '/learn/tutorials/' | relative_url }}">Tutorials</a></li>
+              <li><a href="{{ '/learn/examples/' | relative_url }}">Examples</a></li>
+            </ul>
+          </li>
+
+          <!-- Reference Dropdown -->
+          <li class="nav-item">
+            <a href="{{ '/reference/' | relative_url }}" class="nav-link has-dropdown">Reference</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ '/reference/language/' | relative_url }}">Language Guide</a></li>
+              <li><a href="{{ '/reference/api/' | relative_url }}">API Reference</a></li>
+              <li><a href="{{ '/reference/tools/' | relative_url }}">Tools & IDEs</a></li>
+            </ul>
+          </li>
+
+          <!-- Community Dropdown -->
+          <li class="nav-item">
+            <a href="{{ '/community/' | relative_url }}" class="nav-link has-dropdown">Community</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ '/community/contribute/' | relative_url }}">Contributing</a></li>
+              <li><a href="{{ '/community/showcase/' | relative_url }}">Showcase</a></li>
+              <li><a href="{{ '/community/events/' | relative_url }}">Events</a></li>
+              <li><a href="{{ '/community/governance/' | relative_url }}">Governance</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{ '/blog/' | relative_url }}" class="nav-link">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{ '/playground/' | relative_url }}" class="nav-link">Playground</a>
+          </li>
+        </ul>
+
+        <!-- External Links -->
+        <div class="nav-external">
+          <a href="https://github.com/rchain" class="nav-icon" title="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://discord.gg/NWkQnfH" class="nav-icon" title="Discord">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com/rchain_coop" class="nav-icon" title="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    {% if page.url != '/' %}
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          {% if page.url == '/learn/' %}
+            <li class="active">Learn</li>
+          {% elsif page.url == '/reference/' %}
+            <li class="active">Reference</li>
+          {% elsif page.url == '/community/' %}
+            <li class="active">Community</li>
+          {% elsif page.url == '/blog/' %}
+            <li class="active">Blog</li>
+          {% elsif page.parent %}
+            {% if page.grand_parent %}
+              <li><a href="{{ '/' | append: page.grand_parent | downcase | replace: ' ', '-' | relative_url }}">{{ page.grand_parent }}</a></li>
+            {% endif %}
+            <li><a href="{{ '/' | append: page.parent | downcase | replace: ' ', '-' | relative_url }}">{{ page.parent }}</a></li>
+            <li class="active">{{ page.title }}</li>
+          {% else %}
+            <li class="active">{{ page.title }}</li>
+          {% endif %}
+        </ol>
+      </nav>
+    {% endif %}
+
+    <article class="page-content">
+      {% comment %}
+        Don't show automatic title - let the content provide its own heading
+      {% endcomment %}
+      
+      {{ content }}
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Rholang</h3>
+          <p>{{ site.description }}</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="{{ '/learn/getting-started/' | relative_url }}">Getting Started</a></li>
+            <li><a href="{{ '/reference/language/' | relative_url }}">Language Guide</a></li>
+            <li><a href="{{ '/community/' | relative_url }}">Community</a></li>
+            <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="https://github.com/rchain">GitHub</a></li>
+            <li><a href="https://discord.gg/NWkQnfH">Discord</a></li>
+            <li><a href="https://twitter.com/rchain_coop">Twitter</a></li>
+            <li><a href="https://forum.rchain.coop">Forum</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {{ 'now' | date: '%Y' }} Rholang Community. {{ site.footer_content }}</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Navigation JavaScript -->
+  <script src="{{ '/assets/js/nav.js' | relative_url }}"></script>
+</body>
+</html>
