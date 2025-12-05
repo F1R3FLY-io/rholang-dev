@@ -1195,5 +1195,4 @@ In other words: your shard is running, reachable, and ready.
 But a shard without code is just an idle engine. To unlock its true potential, you need to deploy Rholang contracts. Contracts transform your shard from infrastructure into an application: they store state, execute logic, and enable interaction.
 
 That is where **Part II** begins. You'll go from a blank shard to one that runs real processes, starting with the simplest "Hello, Shard!" contract and progressing toward advanced Rholang patterns.
->**👉 NEXT**
-**Part II — Deploying Rholang Code to a Shard:** hands-on guide to writing, deploying, and verifying smart contracts on your Firefly shard.
+👉 [NEXT Part II — Deploying Rholang Code to a Shard](./part-02-deploying-rholang-code-to-a-shard.md): hands-on guide to writing, deploying, and verifying smart contracts on your Firefly shard.
