@@ -27,7 +27,7 @@ This chapter provides everything needed to run Firefly with confidence.
 
 **Firefly shard architecture**
 
-![Shard Architecture](../images/p1shard-architecture.png)
+![Shard Architecture](./images/p1shard-architecture.png)
 
 *Diagram – illustration only, not executable code*
 
@@ -168,7 +168,7 @@ The goal of this section is simple:
 
 ---
 **Shard State**
-![Shard State Diagram](../images/p1shard-state.png)
+![Shard State Diagram](./images/p1shard-state.png)
 *Diagram — illustration only, not executable code*
 
 > 💡 **TIP**  
@@ -300,7 +300,7 @@ VALIDATOR3_HOST=rnode.validator3
 READONLY_HOST=rnode.readonly   # optional
 ```
 
-![Full .env example](../images/p1-config-env-full-example.png)
+![Full .env example](./images/p1-config-env-full-example.png)
 >🔒 **SECURITY**  
 Never commit real keys. Always use `<PRIVATE_KEY>`, `<PUB_KEY>`, `<HOST>`.
 
@@ -347,7 +347,7 @@ Most startup issues come from `.env` typos or port conflicts.
 - **Validators** → run consensus and execute blocks.  
 - **Observer** → read-only, safe for queries/logs.  
   *(Does not participate in consensus or block production.)*
-  ![Node roles diagram](../images/p1-node-roles-diagram.png)
+  ![Node roles diagram](./images/p1-node-roles-diagram.png)
 
 ### Secrets & version control
 
@@ -441,7 +441,7 @@ docker compose -f docker/shard-with-autopropose.yml logs -f
 ```
 Expected: blocks proposed, health check live.
 
-![Shard logs output extra](../images/p1-shard-logs-output.png-1.png)
+![Shard logs output extra](./images/p1-shard-logs-output.png-1.png)
 >**💡 TIP**
 Use `-d` for detached mode. Omit it if you want logs streaming immediately.
 ### Level 2 — Standard Walkthrough
@@ -457,7 +457,7 @@ docker compose -f docker/shard-with-autopropose.yml up -d
   - **bootstrap** node (network seed),
   - **validator** nodes (consensus),
   - **autopropose** service (ensures blocks are produced automatically).
-  ![Container list](../images/p1-docker-containers-list.png)
+  ![Container list](./images/p1-docker-containers-list.png)
   #### Verify containers
 
 Check what’s running:
@@ -482,7 +482,7 @@ Expected:
 - Block proposals every 30 seconds (autopropose default).
 - No crash loops or port errors.
 
-![p1-validator-logs-expected-output](../images/p1-validator-logs-expected-output.png)
+![p1-validator-logs-expected-output](./images/p1-validator-logs-expected-output.png)
 
 #### Health check
 Query the HTTP status endpoint:
@@ -512,7 +512,7 @@ docker compose -f docker/observer.yml logs -f observer
 
 Observer does not participate in consensus — it’s perfect for API queries.
 
-![Observer logs output](../images/p1-observer-logs-output.png)
+![Observer logs output](./images/p1-observer-logs-output.png)
 
 >💡**TIP**
 Use an observer for dashboards, bots, or integration tests.
@@ -524,7 +524,7 @@ What happens under the hood
 - Autopropose: automatically triggers block proposals — without it, your deploys may remain pending. It simulates real network activity.
 - Observer: optional node that mirrors state without voting rights.
 
-![Under the hood diagram](../images/p1-under-the-hood-diagram.png)
+![Under the hood diagram](./images/p1-under-the-hood-diagram.png)
 
 #### Logs & troubleshooting
 Common issues at launch:
@@ -571,7 +571,7 @@ Look for:
 - Messages like “Proposed block …” (autopropose working).
 - No crash loops or repeated errors.
 If you see blocks being proposed and no red errors, your shard is healthy.
-![Validator log output](../images/p1-log-output-validator-check.png)
+![Validator log output](./images/p1-log-output-validator-check.png)
 
 > **💡 TIP**
 Always check at least one validator log after startup.
@@ -595,7 +595,7 @@ If `validator1` is not found, confirm the service name with: `docker compose ps`
 - Autopropose cycle: every ~30 seconds (default), a validator proposes a new block.
 - No “port already in use” errors.
 - No crash/restart loops (services should stay up).
-![Health signs logs](../images/p1-health-signs-logs.png)
+![Health signs logs](./images/p1-health-signs-logs.png)
 
 #### Common warnings you can ignore
 ●	Occasional “timeout waiting for peer” — normal during bootstrap.
@@ -610,7 +610,7 @@ curl http://127.0.0.1:40403/status
 ```bash
 {"address":"rnode://1e780e5dfbe0a3d9470a2b414f502d59402e09c2@rnode.bootstrap?protocol=40400&discovery=40404","version":"RChain Node 1.0.0-SNAPSHOT (e30fc2ceb2c98c133d265e0748085c7ee9307b9b)","peers":3,"nodes":4}
 ```
-![Health check endpoint output](../images/p1-health-check-endpoint-output.png)
+![Health check endpoint output](./images/p1-health-check-endpoint-output.png)
 
 >**💡 TIP**
 Use both logs and status endpoint. Logs give context; endpoint confirms service readiness.
@@ -775,7 +775,7 @@ curl http://127.0.0.1:40403/api/v1/openapi.json
 >**📝 NOTE**
 Exact endpoints depend on the build version and the Rholang API version. Check `openapi.json` to confirm availability
 
-![System endpoints table](../images/p1-system-endpoints-table.png)
+![System endpoints table](./images/p1-system-endpoints-table.png)
 
 #### Client-level liveness (Rust client)
 Rust client can verify liveness indirectly:
@@ -820,7 +820,7 @@ docker compose -f docker/shard-with-autopropose.yml logs -f
 **Expected output:**
 `Hello, Shard!`
 
-![Deploy “Hello, Shard!” log](../images/p1-deploy-hello-shard-log.png)
+![Deploy “Hello, Shard!” log](./images/p1-deploy-hello-shard-log.png)
 
 >**💡 TIP**
 If you see both “included in block” in show-deploy and “Hello, Shard!” in logs — your shard is alive and executing.
@@ -836,7 +836,7 @@ Create a minimal Rholang file hello.rho:
 ```
 Save it under `rholang/examples/hello.rho` (or any path; just remember it).
 
-![Rholang hello.rho example](../images/p1-rholang-hello-contract-example.png)
+![Rholang hello.rho example](./images/p1-rholang-hello-contract-example.png)
 
 #### Deploy using the Rust client
 **Run:**
@@ -942,7 +942,7 @@ curl http://127.0.0.1:40403/status
 ❌ `No such file: ./contracts/hello.rho` → Wrong path.
 ✅ Verify file exists and adjust --file.
 
- ![Level 1 common errors output](../images/p1-level1-common-errors-output.png)
+ ![Level 1 common errors output](./images/p1-level1-common-errors-output.png)
 
 >**💡 TIP**
 Most Level 1 issues are setup-related. Fix them once, and you’ll rarely see them again.
@@ -1044,7 +1044,7 @@ Run from repo root:
 docker compose -f docker/shard-with-autopropose.yml down
 ```
 **Expected**: all containers stopped.
-![Stop shard output](../images/p1-stop-shard-output.png)
+![Stop shard output](./images/p1-stop-shard-output.png)
 #### Confirm shutdown
 List containers:
 ```bash
@@ -1060,9 +1060,9 @@ Preserve or reset state
 - Reset state: `run rm -rf docker/data`. This wipes volumes, removing all shard state.
 >**⚠️ WARNING**
 Wiping volumes resets your shard to “genesis” state. All previous contracts, keys, and blocks are lost.
-![Reset volumes folders view](../images/p1-reset-volumes-folders-view1.png)
+![Reset volumes folders view](./images/p1-reset-volumes-folders-view1.png)
 
-![Reset volumes folders view](../images/p1-reset-volumes-folders-view.png)
+![Reset volumes folders view](./images/p1-reset-volumes-folders-view.png)
 
 #### Restart cleanly
 To restart from scratch:
