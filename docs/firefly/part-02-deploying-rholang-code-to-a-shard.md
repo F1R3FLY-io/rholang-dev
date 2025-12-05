@@ -89,7 +89,7 @@ By the end of this section, you’ll have deployed your first Rholang contract, 
 Rholang is based on the ρ-calculus, a process calculus where everything is modeled as a concurrent process and all communication happens through channels.
 **In simpler terms:** imagine many small workers running in parallel and sending messages to each other. That’s the mental model of Rholang — multiple processes talking through channels.
 
-![Rholang Deployment Flow (Part 2)](../images/p2-rholang-deploy-flow.png)
+![Rholang Deployment Flow (Part 2)](./images/p2-rholang-deploy-flow.png)
 
 This diagram summarizes the flow described above
 *Diagram — illustration only, not executable code*
@@ -108,7 +108,7 @@ Make sure you completed **Part I** and have at least one shard running.
 ●	Observer (optional) curl http://127.0.0.1:40443/status
 **Expected output:**
 Each node should provide the similar response if running correctly
-![Health Check Output (Part 2)](../images/p2-health-check-output.png)
+![Health Check Output (Part 2)](./images/p2-health-check-output.png)
 
 >**⚠️ WARNING**
 If your shard isn’t healthy, stop here. Fix that first, or the rest of this section will fail in increasingly mysterious ways.
@@ -120,7 +120,7 @@ cargo run -- help`
 ```
 **Expected**: a list of available commands `(deploy, get-deploy, status`, …).
 
-![Health check endpoint output](../images/p2-health-check-endpoint-output.png)
+![Health check endpoint output](./images/p2-health-check-endpoint-output.png)
 
  
 >**💡 TIP**
@@ -137,7 +137,7 @@ new stdout(`rho:io:stdout`) in {
   stdout!("Hello, Shard!")
 }
 ```
-![Stdout.rho contract example](../images/p2-stdout-rho-example.png)
+![Stdout.rho contract example](./images/p2-stdout-rho-example.png)
 >**📝 NOTE**
 Use one of the confirmed locations for the sample contract:
 ●	f1r3node: rholang/examples/stdout.rho
@@ -176,7 +176,7 @@ Use one of the confirmed locations for the sample contract:
  2.	Rust client → responds to cargo `run -- help`
  3.	Contract file → exists `(stdout.rho)` 
  If all three pass, you’re good to go.
- ![Pre-check flow diagram](../images/p2-precheck-flow-diagram.png)
+ ![Pre-check flow diagram](./images/p2-precheck-flow-diagram.png)
  *Diagram — illustration only, not executable co
  This diagram summarizes the flow described above.
  
@@ -203,7 +203,7 @@ new stdout(`rho:io:stdout`) in {
 - `stdout!(…)` → sends the string message to logs.
 When you deploy this contract to your shard, you’ll see in logs:
 `Hello, Shard!`
-![Hello Shard contract example](../images/p2-hello-shard-contract-example.png)
+![Hello Shard contract example](./images/p2-hello-shard-contract-example.png)
 
 >**💡 TIP**
 You can store contracts in any folder, since the path is passed as an argument when deploying.
@@ -225,7 +225,7 @@ new echo, stdout(`rho:io:stdout`) in {
 ●	`echo!("Hello again!")` → sends a message to itself.
 
 **Deploying**
-![Echo contract example](../images/p2-echo-contract-example.png)
+![Echo contract example](./images/p2-echo-contract-example.png)
 
 **Expected output in logs:**
 `Hello again!`
@@ -234,7 +234,7 @@ new echo, stdout(`rho:io:stdout`) in {
 ```bash
 docker compose -f shard-with-autopropose.yml logs validator1 | grep "Hello again"
 ```
-![Echo contract logs](../images/p2-echo-contract-logs.png)
+![Echo contract logs](./images/p2-echo-contract-logs.png)
 
 >**🔎 DEEP DIVE**
 In Rholang, sending (chan!(x)) and receiving (for`(x <- chan)`) are the two fundamental operations. When a send and a receive meet on the same channel, the system performs a reduction — the basic step of computation.
@@ -352,7 +352,7 @@ cargo run -- deploy --file ./rho_examples/stdout.rho
 ✅ Deployment successful!  
 ⏱️  Time taken: 18.40ms  
 🆔 Deploy ID: 30440220346d9cec15efdd37d9692fa357bd23815ec9f9eaeb8c0f1ac713d3e41bff00e4022050b5a62c41985ed2833c29f410def5d94becb2145701f93e6e2a3c87717f9d8e
-![Deploy ID output](../images/p2-deploy-id-output.png)
+![Deploy ID output](./images/p2-deploy-id-output.png)
 
 >**📝 NOTE**
 This log is simplified for illustration (real runs may include extra lines).
@@ -376,7 +376,7 @@ cargo run -- deploy \
 - `--host` → the shard host.
 - `--port`→ the shard port (e.g., 40412 for `<SERVICE_NAME>)`
 - `--private-key` → your signing key (never paste real keys in docs; use placeholders).
-![Intermediate deploy output](../images/p2-intermediate-deploy-output.png)
+![Intermediate deploy output](./images/p2-intermediate-deploy-output.png)
 #### Check your deploy status
 After submitting, check the shard to confirm it received your contract ( run from rust-client folder): 
 ```bash
@@ -396,12 +396,12 @@ cargo run -- get-deploy -d <DEPLOY_ID>
 🌐 Shard ID: root
 🔐 Signature Algorithm: secp256k1
 ⏱️  Query time: 817.05ms
-![Deploy information output](../images/p2-deploy-information-output.png)
+![Deploy information output](./images/p2-deploy-information-output.png)
 >**⚠️ WARNING**
 Status may first appear as “Pending” before changing to “Included in block”.
 
 Example of another deployment with Pending status (see screenshot below).
-![Pending deploy status example](../images/p2-deploy-status-pending-example.png)
+![Pending deploy status example](./images/p2-deploy-status-pending-example.png)
 
 ### Level 3: Advanced Alternatives
 Not every team will use the Rust client directly. Here are other methods you may encounter:
@@ -497,7 +497,7 @@ Status: Included in block
 
 - `Pending (not yet in block)` → the contract is in the deploy queue.
 ●	`Included in block` → the contract has been reduced and committed to a block.
-![Deploy status check](../images/p2-deploy-status-check.png)
+![Deploy status check](./images/p2-deploy-status-check.png)
 >**📝 NOTE**
 Propose cycle: If your Compose profile doesn’t enable automatic proposing, a deploy may remain pending until a block is proposed. Use a profile with autopropose (e.g., `shard-with-autopropose.yml)`. Otherwise, expect a short delay or trigger proposing manually.
 ### Level 2: Reading the Execution Output (Logs)
@@ -508,7 +508,7 @@ docker compose -f shard-with-autopropose.yml logs -f <SERVICE_NAME>
 ```
 You should see:
 `Hello, Shard!`
-![Reading logs output](../images/p2-reading-logs-output.png)
+![Reading logs output](./images/p2-reading-logs-output.png)
 
  
 >**🔎 DEEP DIVE**
@@ -530,12 +530,12 @@ Example response:
 }
 ```
 `blockHash`→ the block where it was included.
-![Shard API deploy status output](../images/p2-shard-api-deploy-status.png)
+![Shard API deploy status output](./images/p2-shard-api-deploy-status.png)
 To inspect the block and view additional details (such as execution cost):
 ```bash 
 curl -s http://127.0.0.1:40403/api/block/<BLOCK_HASH>
 ```
-![Shard block inspection output](../images/p2-shard-block-inspection.png)
+![Shard block inspection output](./images/p2-shard-block-inspection.png)
 
 >**📝 NOTE**
 Exact API paths and fields may differ depending on the build. Check your node’s OpenAPI spec`(curl -s http://127.0.0.1:40403/api/v1/openapi.json)` or your running service
@@ -545,7 +545,7 @@ Exact API paths and fields may differ depending on the build. Check your node’
 - API confirms the deploy with a `blockHash` (optional but recommended).
 
 If all three checks pass, your contract has been included in a block and produced the expected result.
- ![Deploy flow diagram](../images/p2-deploy-flow-diagram.png)
+ ![Deploy flow diagram](./images/p2-deploy-flow-diagram.png)
  Diagram — illustration only, not executable code
 *This diagram summarizes the flow described above.*
 
@@ -591,7 +591,7 @@ docker compose -f shard-with-autopropose.yml ps
 Expected line:
 `Hello, Shard!`
 
-![Docker logs — Hello Shard](../images/p2-docker-logs-hello-shard.png)
+![Docker logs — Hello Shard](./images/p2-docker-logs-hello-shard.png)
 
 >**🔎 DEEP DIVE**
 `stdout!(msg)` is a send; the node provides a matching receive on stdout. When they meet, a reduction happens and the message is printed to logs.
@@ -615,7 +615,7 @@ new ack, sum, stdout(`rho:io:stdout`) in {
 ```
 Expected logs:
 `5`
-![Sum Contract — Expected Logs](../images/p2-sum-contract-expected-logs.png)
+![Sum Contract — Expected Logs](./images/p2-sum-contract-expected-logs.png)
 
 Why this works: the deploy creates a fresh, unforgeable channel ack, passes it into the contract, and then listens on it to receive the result.
 >**📝 NOTE**
@@ -647,12 +647,12 @@ new sum,
 ```
 
 ##### Deployment
-![Deployment Log (a.rho)](../images/p2-deploy-a-rho.png)
+![Deployment Log (a.rho)](./images/p2-deploy-a-rho.png)
 
 ##### Logs
-![Execution Logs for a.rho](../images/p2-deploy-a-rho-logs.png)
+![Execution Logs for a.rho](./images/p2-deploy-a-rho-logs.png)
 
-![Full Execution Logs for a.rho](../images/p2-deploy-a-rho-logs-full.png)
+![Full Execution Logs for a.rho](./images/p2-deploy-a-rho-logs-full.png)
 
 #### Step B – Registry Lookup
 ```bash
@@ -671,12 +671,12 @@ new rl(`rho:registry:lookup`),
     }
 ```
 ##### Deployment
-![Deployment Log (z.rho)](../images/p2-deploy-z-rho.png)
+![Deployment Log (z.rho)](./images/p2-deploy-z-rho.png)
 
 ##### Logs
-![Execution Logs for z.rho](../images/p2-deploy-z-rho-logs.png)
+![Execution Logs for z.rho](./images/p2-deploy-z-rho-logs.png)
 
-![Full Execution Logs for z.rho](../images/p2-deploy-z-rho-logs-full.png)
+![Full Execution Logs for z.rho](./images/p2-deploy-z-rho-logs-full.png)
 
 
 >**⚠️ WARNING**
@@ -715,13 +715,13 @@ APIs typically **do not** return `stdout` text. To “read results,” either in
 
 **Execution paths (`stdout / ack / registry)`.**
 
-![P2-diagram-execution-paths](../images/P2-diagram-execution-paths.png)
+![P2-diagram-execution-paths](./images/P2-diagram-execution-paths.png)
 
 
 Diagram — illustration only, not executable code
 *This diagram summarizes the flow described above.
 **Troubleshooting Quick Wins**
-![P2-diagram-troubleshooting-quick-wins](../images/P2-diagram-troubleshooting-quick-wins.png)
+![P2-diagram-troubleshooting-quick-wins](./images/P2-diagram-troubleshooting-quick-wins.png)
 Diagram — illustration only, not executable code
 
 ### Execution & Results Checklist
@@ -756,7 +756,7 @@ Understanding both sides helps you debug fast
 
 Example: node not reachable error and successful retry after fixing URL.
 
-![Example: node not reachable → fixed URL](../images/P2-IMG-018-node-not-reachable-error.png)
+![Example: node not reachable → fixed URL](./images/P2-IMG-018-node-not-reachable-error.png)
 
 
 >**💡 TIP**
@@ -805,7 +805,7 @@ Many advanced errors come from capability mismanagement — using the wrong key,
 2.	Check syntax → Run parser or deploy small snippets (hello.rho) first.
 3.	Check execution → Use get-deploy, logs, and API.
 4.	Check names & keys → Ensure correct private key and registry names.
-![Execution check flow](../images/p2-execution-check-flow.png)
+![Execution check flow](./images/p2-execution-check-flow.png)
 
 Diagram – illustration only, not executable code
 *This diagram summarizes the flow described above*
@@ -888,7 +888,7 @@ new token, stdout(`rho:io:stdout`) in {
 }
 ```
 Logs showing `“Balance: 10”, then “Balance: 9”…`
-![Token balance logs](../images/p2-token-balance-logs.png)
+![Token balance logs](./images/p2-token-balance-logs.png)
 
 >**🔎 DEEP DIVE**
 Stateful contracts use recursion to “carry” state forward. Each call spawns a new version of the process with updated values. This is the functional, concurrent way of managing state in Rholang.
@@ -927,7 +927,7 @@ _ **Developer Tools:** Use playgrounds and linters to test code quickly (and the
 - **Integration:** Learn how to connect Rholang contracts to off-chain APIs and services.
 - **Security Audits:** Adopt best practices around unforgeable names and capability patterns.
 
-![Skill levels diagram](../images/p2-skill-levels-diagram.png)
+![Skill levels diagram](./images/p2-skill-levels-diagram.png)
 
 Diagram – illustration only, not executable code
 *This diagram summarizes the flow described above.*
@@ -1105,7 +1105,7 @@ Use this appendix like a “recipe book.” Try each snippet, then modify it for
 - Registry lookup fails → URI string typo or name not registered (re-register; use the exact URI).
 - Invalid signature → Wrong private key (re-check `.env / <PRIVATE_KEY>`).
 **Troubleshooting Flow**
-![Troubleshooting flow diagram](../images/p2-troubleshooting-flow.png)
+![Troubleshooting flow diagram](./images/p2-troubleshooting-flow.png)
 
 Diagram – illustration only, not executable code
 *This diagram summarizes the flow described above.*
