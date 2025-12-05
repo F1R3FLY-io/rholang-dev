@@ -1155,3 +1155,4 @@ At the same time, Firefly and Rholang live in active repositories. Many examples
 >**💡 TIP**
 If you like learning from raw repos and tests, these sources are your playground — they show a wider universe of patterns and tooling than any single guide can cover.
 
+👉 [NEXT Part IV — The Rholang Mindset](./part-04-the-rholang-mindset.md) …
