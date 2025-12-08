@@ -28,7 +28,9 @@
 - Local development: `bundle exec jekyll serve` or equivalent static site generator
 - Build: `bundle exec jekyll build` or equivalent
 - Install dependencies: `bundle install` or equivalent package manager
-- DO NOT ever `git add`, `git rm` or `git commit, or git push` code. Allow the Claude user to always manually review git changes
+- Use the `/quick-commit` slash command for git add/commit operations; use the `/recursive-push` command for git push operations. Do not run `git add`, `git commit`, or `git push` directly unless explicitly requested.
+- `git mv` is permitted but requires user confirmation.
+- Never discard user changes; avoid destructive git commands.
 - **Operating outside of local repository (with .git/ directory root)**: Not permitted and any file or other operations require user approval and notification
 
 ## Content Guidelines
@@ -98,6 +100,10 @@
 - Monitor for broken links and outdated information
 - Backup important content and maintain version control
 - Never include sensitive information or private keys in documentation
+
+## Attributions
+
+- Do not include any references to Claude co-authoring commits or code.
 
 # important-instruction-reminders
 Do what has been asked; nothing more, nothing less.

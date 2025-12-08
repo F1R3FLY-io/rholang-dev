@@ -8,57 +8,43 @@ description: Learn Rholang programming from the ground up
 
 Written by Joshy Orndorff
 
-In order to run the Rholang snippets in this tutorial, you will need some kind of development environment. This is not an exhaustive guide to Rholang development tools or stacks. Rather, it shows a few common basic development environments to get you started.
+In order to run the Rholang snippets in this tutorial, you will need some kind of development environment. This is not an exhaustive guide to Rholang development tools or stacks. Rather, it shows a few common basic development environments to get you started. Content adapted from the rholang.org tutorial series.
 
 ## Development Environments
 
 ### VSCode Plugin
-
-This is the Visual Studio Code extension for the Rholang programming language. It has support for syntax highlighting and code evaluation with error highlighting.
-
-[Download from VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang)
+This is the Visual Studio Code extension for the Rholang programming language. It has support for syntax highlighting and code evaluation with error highlighting. [Marketplace VSCode](https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang)
 
 ### RChain Cloud
-
 Evaluate Rholang code in the cloud and test your dApp at [RChain Cloud](https://try-rholang-22.netlify.app/).
 
 ### Local Node
+Another way to run Rholang code is to start up your own local RNode and use its Rholang interpreter. For that RNode has to be installed. There are two modes to run Rholang code locally: repl and eval. With repl you can type Rholang code directly into the console and execute it. With eval you are running a `.rho` file and execute this file. Tutorial for local setup is [here](/docs/rholang/).
 
-Another way to run Rholang code is to start up your own local RNode and use its Rholang interpreter. For that RNode has to be installed. There are two modes to run Rholang code locally: repl and eval. With repl you can type Rholang code directly into the console and execute it. With eval you are running a .rho file and execute this file.
-
-Tutorial for local setup is [here](/docs/rholang/).
-
-## Tutorial Structure
-
-### Basic Tutorials
-- [Sending](/tutorials/sending/) - Learn how to send messages on channels
-- [Receiving](/tutorials/receiving/) - Learn how to receive messages from channels  
-- [Names and Processes](/tutorials/names-and-processes/) - Understanding the core concepts
-- [Send and Peek](/tutorials/send-and-peek/) - Advanced channel operations
-- [Join](/tutorials/join/) - Coordinating multiple channels
-- [Unforgeable Names](/tutorials/unforgeable-names/) - Secure channel creation
-
-### Intermediate Tutorials
-- [Bundles and Interpolation](/tutorials/bundles-interpolation/) - Working with data bundles
-- [State Channels](/tutorials/state-channels/) - Managing persistent state
-- [Object Capabilities](/tutorials/object-capabilities/) - Security patterns
-- [Additional Syntax](/tutorials/additional-syntax/) - Language features
-- [Pattern Matching](/tutorials/pattern-matching/) - Advanced pattern matching
-- [Data Structures](/tutorials/data-structures/) - Working with complex data
-
-### Advanced Tutorials
-- [Recursion](/tutorials/recursion/) - Recursive programming patterns
-- [Game Example](/tutorials/game-example/) - Building a complete application
-- [Off Chain](/tutorials/off-chain/) - Interacting with external systems
-- [Cheat Sheet](/tutorials/cheat-sheet/) - Quick reference guide
-
-### Rho Lambda
-- [Introduction](/tutorials/introduction/) - Functional programming in Rholang
-- [Booleans](/tutorials/boolean/) - Boolean logic implementation
-- [Church Numerals](/tutorials/church/) - Number representations
-- [Linked Lists](/tutorials/linked/) - List data structures
-- [Notation](/tutorials/notation/) - Mathematical notation
-- [Conway](/tutorials/conway/) - Conway's Game of Life implementation
+## Start learning Rholang
+- [Sending](/tutorials/sending/) - Send messages on channels and see how concurrency works.
+- [Receiving](/tutorials/receiving/) - Listen on channels, trigger comm events, and introduce simple contracts.
+- [Names and Processes](/tutorials/names-and-processes/) - Relay messages and understand name scoping.
+- [Send and Peek](/tutorials/send-and-peek/) - Use send-and-peek patterns to coordinate processes.
+- [Join](/tutorials/join/) - Coordinate multiple channels with joins.
+- [Unforgeable Names](/tutorials/unforgable-names/) - Create secure channels with unforgeable names.
+- [Bundles and Interpolation](/tutorials/bundles-interpolation/) - Work with data bundles and interpolation.
+- [State Channels](/tutorials/state-channels/) - Manage persistent state.
+- [Object Capabilities](/tutorials/object-capabilities/) - Apply object-capability security patterns.
+- [Additional Syntax](/tutorials/additional-syntax/) - Explore additional Rholang syntax.
+- [Pattern Matching](/tutorials/pattern-matching/) - Use pattern matching to control program flow.
+- [Data Structures](/tutorials/data-structures/) - Build common data structures in Rholang.
+- [Recursion](/tutorials/recursion/) - Write recursive processes.
+- [Game Example](/tutorials/game-example/) - Walk through a complete example.
+- [Off Chain](/tutorials/off-chain/) - Interact with external systems.
+- [Cheat Sheet](/tutorials/cheat-sheet/) - Quick reference for syntax.
+- Rho Lambda series:
+  - [Introduction](/tutorials/introduction/)
+  - [Booleans](/tutorials/boolean/)
+  - [Church Numerals](/tutorials/church/)
+  - [Linked Lists](/tutorials/linked/)
+  - [Notation](/tutorials/notation/)
+  - [Conway](/tutorials/conway/)
 
 ## Next Steps
 
