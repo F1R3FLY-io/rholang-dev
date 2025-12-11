@@ -36,7 +36,7 @@ Task tracker for completing the Rholang documentation site.
 - **Blocked by**: None
 
 ### TASK-101: Draft updated language specification outline
-- **Status**: pending
+- **Status**: completed
 - **Goal**: Produce a structured outline for the updated spec that reflects the current interpreter and BNFC grammar.
 - **File**: `docs/specs/rholang-language-spec.md`
 - **Acceptance Criteria**:
@@ -64,6 +64,15 @@ Task tracker for completing the Rholang documentation site.
   - Identified any missing public artifacts required for full coverage (e.g., cost model docs, stdlib definitions)
 - **Blocked by**: None
 
+### TASK-103a: Incorporate legacy reference PDF (Google Drive)
+- **Status**: pending
+- **Goal**: Add the Google Drive document (`https://drive.google.com/file/d/1FvPuiPm7ytGyklex_PEmVyJ8XgbTdIEg/view`) to the resource set for language documentation.
+- **Acceptance Criteria**:
+  - Local copy or accessible reference stored/linked for the team
+  - Noted provenance/version/date of the document
+  - Extracted relevant sections mapped to spec outline where applicable
+- **Blocked by**: None
+
 ### TASK-104: Gap analysis between public sources and planned spec
 - **Status**: pending
 - **Goal**: Compare the public interpreter/grammar artifacts against the planned spec outline to surface missing sections and doc gaps.
@@ -73,6 +82,26 @@ Task tracker for completing the Rholang documentation site.
   - List of spec sections that need additions or clarifications to cover observed behavior (syntax, semantics, cost model, stdlib)
   - Risks and unknowns called out (e.g., areas where behavior is unclear from public code)
 - **Blocked by**: TASK-101, TASK-103
+
+### TASK-105: Capture version history (1.0 → 1.4 roadmap)
+- **Status**: pending
+- **Goal**: Document the provided version history notes (1.1 syntactic sugar, partially implemented 1.2, in-progress 1.3 MeTTa IL, future 1.4 agents/reifiable spaces) and integrate them into the spec context.
+- **File**: `docs/specs/rholang-version-diff.md`
+- **Acceptance Criteria**:
+  - Version deltas summarized: rename `;`→`&`, reintroduce `;` as sequencing, call-response `!?`, receive-ack `?!`
+  - 1.2 deferred items (name qualifiers, MORK internal use) noted with where/when addressed
+  - 1.3 goals (theories, spaces, MORK, type predicates, transactions/tokenization) captured
+  - 1.4 preview (agents, reifiable spaces with qualifiers) captured with current status
+- **Blocked by**: None
+
+### TASK-106: Incorporate agents and reifiable spaces from FIPS
+- **Status**: pending
+- **Goal**: Pull the agents and reifiable spaces design details from `https://github.com/F1R3FLY-io/FIPS/tree/main` (both “under review” and “approved”) to inform the spec and gap analysis.
+- **Acceptance Criteria**:
+  - Key FIPS documents identified and locally referenced
+  - Agent model and reifiable space semantics summarized for the spec outline
+  - Open questions/risks logged if FIPS content is incomplete or evolving
+- **Blocked by**: TASK-105, availability of the FIPS repo content
 
 ---
 
