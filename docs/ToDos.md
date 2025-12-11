@@ -25,7 +25,7 @@ Task tracker for completing the Rholang documentation site.
 ## p0 - Blocking
 
 ### TASK-100: Capture language deltas from new interpreter sources
-- **Status**: pending
+- **Status**: completed
 - **Goal**: Inventory all syntax/semantic changes between the scraped (legacy) docs and the current Rholang implementation in:
   - `f1r3node/rust/dev/rholang/src/rust/interpreter`
   - `f1r3node/main/rholang/src/main/bnfc`
@@ -54,6 +54,25 @@ Task tracker for completing the Rholang documentation site.
   - Navigation impact noted (including `docs/index.md` and sidebar menus)
   - Dependencies recorded so execution tasks can be sequenced
 - **Blocked by**: TASK-100, TASK-101
+
+### TASK-103: Collect publicly available grammar and interpreter artifacts
+- **Status**: pending
+- **Goal**: Assemble the public sources needed for comparison (BNFC grammar and Rust interpreter snapshots from `f1r3node` links).
+- **Acceptance Criteria**:
+  - Local copies of the BNFC grammar (`rholang/src/main/bnfc`) and interpreter entry points (`rholang/src/rust/interpreter`) saved for reference
+  - Note which branch/commit each snapshot comes from and any build flags affecting language features
+  - Identified any missing public artifacts required for full coverage (e.g., cost model docs, stdlib definitions)
+- **Blocked by**: None
+
+### TASK-104: Gap analysis between public sources and planned spec
+- **Status**: pending
+- **Goal**: Compare the public interpreter/grammar artifacts against the planned spec outline to surface missing sections and doc gaps.
+- **File**: `docs/specs/rholang-version-diff.md` (or section therein)
+- **Acceptance Criteria**:
+  - Table summarizing constructs present in interpreter/BNFC vs current doc set (new/changed/removed)
+  - List of spec sections that need additions or clarifications to cover observed behavior (syntax, semantics, cost model, stdlib)
+  - Risks and unknowns called out (e.g., areas where behavior is unclear from public code)
+- **Blocked by**: TASK-101, TASK-103
 
 ---
 
