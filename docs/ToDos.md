@@ -46,7 +46,7 @@ Task tracker for completing the Rholang documentation site.
 - **Blocked by**: TASK-100
 
 ### TASK-102: Re-scope documentation set to the current language
-- **Status**: pending
+- **Status**: completed
 - **Goal**: Map all existing `.md` pages to the updated spec, flag outdated sections, and define required updates/removals.
 - **File**: `docs/specs/doc-update-plan.md`
 - **Acceptance Criteria**:
@@ -56,25 +56,25 @@ Task tracker for completing the Rholang documentation site.
 - **Blocked by**: TASK-100, TASK-101
 
 ### TASK-103: Collect publicly available grammar and interpreter artifacts
-- **Status**: pending
-- **Goal**: Assemble the public sources needed for comparison (BNFC grammar and Rust interpreter snapshots from `f1r3node` links).
+- **Status**: completed
+- **Goal**: Assemble the public sources needed for comparison (Tree-sitter grammar and Rust interpreter snapshots from `f1r3node` links).
 - **Acceptance Criteria**:
-  - Local copies of the BNFC grammar (`rholang/src/main/bnfc`) and interpreter entry points (`rholang/src/rust/interpreter`) saved for reference
+  - Local copy of the Tree-sitter grammar (`rholang-tree-sitter/src/grammar.json`) and interpreter entry points (`rholang/src/rust/interpreter`) saved for reference
   - Note which branch/commit each snapshot comes from and any build flags affecting language features
   - Identified any missing public artifacts required for full coverage (e.g., cost model docs, stdlib definitions)
-- **Blocked by**: None
+ - **Blocked by**: None
 
 ### TASK-103a: Incorporate legacy reference PDF (Google Drive)
-- **Status**: pending
+- **Status**: completed
 - **Goal**: Add the Google Drive document (`https://drive.google.com/file/d/1FvPuiPm7ytGyklex_PEmVyJ8XgbTdIEg/view`) to the resource set for language documentation.
 - **Acceptance Criteria**:
-  - Local copy or accessible reference stored/linked for the team
+  - Local copy or accessible reference stored/linked for the team (current local: `./Meredith_Radestock-rho_calculus.pdf`)
   - Noted provenance/version/date of the document
   - Extracted relevant sections mapped to spec outline where applicable
 - **Blocked by**: None
 
 ### TASK-104: Gap analysis between public sources and planned spec
-- **Status**: pending
+- **Status**: completed
 - **Goal**: Compare the public interpreter/grammar artifacts against the planned spec outline to surface missing sections and doc gaps.
 - **File**: `docs/specs/rholang-version-diff.md` (or section therein)
 - **Acceptance Criteria**:
@@ -84,24 +84,34 @@ Task tracker for completing the Rholang documentation site.
 - **Blocked by**: TASK-101, TASK-103
 
 ### TASK-105: Capture version history (1.0 → 1.4 roadmap)
-- **Status**: pending
+- **Status**: completed
 - **Goal**: Document the provided version history notes (1.1 syntactic sugar, partially implemented 1.2, in-progress 1.3 MeTTa IL, future 1.4 agents/reifiable spaces) and integrate them into the spec context.
 - **File**: `docs/specs/rholang-version-diff.md`
 - **Acceptance Criteria**:
   - Version deltas summarized: rename `;`→`&`, reintroduce `;` as sequencing, call-response `!?`, receive-ack `?!`
   - 1.2 deferred items (name qualifiers, MORK internal use) noted with where/when addressed
   - 1.3 goals (theories, spaces, MORK, type predicates, transactions/tokenization) captured
-  - 1.4 preview (agents, reifiable spaces with qualifiers) captured with current status
-- **Blocked by**: None
+  - 1.4 items (agents, reifiable spaces with qualifiers) treated as in-scope for the current spec (not future-only)
+  - Each version delta tied to branch/commit references from `f1r3node` (Rust interpreter at `rust/dev/node/src/rust`, Tree-sitter grammar at `rholang-tree-sitter/src/grammar.json`) where possible
+ - **Blocked by**: None
 
 ### TASK-106: Incorporate agents and reifiable spaces from FIPS
-- **Status**: pending
-- **Goal**: Pull the agents and reifiable spaces design details from `https://github.com/F1R3FLY-io/FIPS/tree/main` (both “under review” and “approved”) to inform the spec and gap analysis.
+- **Status**: completed
+- **Goal**: Pull the agents and reifiable spaces design details from `https://github.com/F1R3FLY-io/FIPS/tree/main` (both "under review" and "approved") to inform the spec and gap analysis.
 - **Acceptance Criteria**:
-  - Key FIPS documents identified and locally referenced
+  - Key FIPS documents identified and locally referenced (local workspace path: `../FIPS/`)
   - Agent model and reifiable space semantics summarized for the spec outline
   - Open questions/risks logged if FIPS content is incomplete or evolving
-- **Blocked by**: TASK-105, availability of the FIPS repo content
+ - **Blocked by**: TASK-105, availability of the FIPS repo content
+
+### TASK-107: Derive BNFC-style grammar from Tree-sitter
+- **Status**: completed
+- **Goal**: Generate a BNFC-like grammar draft from the Tree-sitter grammar (`rholang-tree-sitter/src/grammar.json`) to document the Rust implementation syntax until an official BNFC is produced.
+- **Acceptance Criteria**:
+  - Parsed/translated grammar captured in `docs/specs/rholang-bnfc-draft.md` (or similar) with notes on assumptions
+  - Differences or ambiguities versus legacy BNFC noted
+  - Commit/branch of the source Tree-sitter grammar recorded (target: `master` at time of extraction)
+- **Blocked by**: TASK-103
 
 ---
 
