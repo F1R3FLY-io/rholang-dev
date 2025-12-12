@@ -128,13 +128,14 @@ Task tracker for completing the Rholang documentation site.
 - **Completed**: 2025-12-11 - Expanded from 488-line outline to 2173-line comprehensive spec
 
 ### TASK-111: Update core language docs to match new spec
-- **Status**: pending
+- **Status**: completed
 - **Goal**: Align existing language pages with the updated spec (names/processes, expressions, send/receive, pattern matching, iteration, design patterns, cost accounting).
 - **Acceptance Criteria**:
   - Each core language page refreshed for current syntax/semantics
   - Examples validated against the updated interpreter
   - Cross-links added back to the spec and tutorials
 - **Blocked by**: TASK-110
+- **Completed**: 2025-12-11 - Created 5 new reference pages (syntax, data-types, channels, pattern-matching, concurrency) in `docs/reference/language/`
 
 ### TASK-112: Refresh tutorials and examples
 - **Status**: pending
@@ -441,6 +442,7 @@ Task tracker for completing the Rholang documentation site.
 
 - **TASK-100 - TASK-107 (p0)**: Language deltas captured in `docs/specs/rholang-version-diff.md`, doc inventory in `docs/specs/doc-update-plan.md`, source catalog in `docs/specs/source-artifacts.md`, and BNFC-style draft in `docs/specs/rholang-bnfc-draft.md`.
 - **TASK-110 (p1)**: Complete language specification authored in `docs/specs/rholang-language-spec.md` (2173 lines) covering lexical structure, syntax (17 precedence levels), operational semantics (reduction rules, structural equivalence, pattern matching), concurrency primitives, type system with bundles, cost model, and complete system URN reference.
+- **TASK-111 (p1)**: Core language reference pages created in `docs/reference/language/` - syntax.md, data-types.md, channels.md, pattern-matching.md, concurrency.md. Updated index pages with cross-links to spec and tutorials.
 
 ---
 
