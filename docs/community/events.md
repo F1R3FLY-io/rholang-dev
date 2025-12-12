@@ -7,33 +7,17 @@ permalink: /community/events/
 
 # Community Events
 
-Join the Rholang community at conferences, meetups, and online events.
+Join the F1r3fly Rholang community at conferences, meetups, and online events.
 
 ## Upcoming Events
 
-### 🎯 RChain Developer Conference 2024
-**Date**: September 15-17, 2024  
-**Location**: Virtual Event  
-**Description**: Annual conference featuring Rholang workshops, technical talks, and networking opportunities.
-
-[Register Now →](https://rchain.coop/conference)
-
 ### 💻 Monthly Developer Calls
 **When**: First Thursday of each month, 5:00 PM UTC  
-**Where**: [Discord](https://discord.gg/NWkQnfH)  
+**Where**: [Discord](https://discord.gg/nCQxEwUd)  
 **Topics**:
 - Recent developments
 - Community Q&A
 - Technical discussions
-
-### 🏗️ Hackathon: Build on RChain
-**Date**: October 20-22, 2024  
-**Prize Pool**: $50,000 in REV tokens  
-**Categories**:
-- DeFi Applications
-- Gaming & NFTs
-- Developer Tools
-- Social Impact
 
 ## Regular Meetups
 
@@ -51,35 +35,7 @@ Join the Rholang community at conferences, meetups, and online events.
 
 ### Regional Meetups
 
-#### North America
-- **San Francisco Rholang Meetup** - Monthly
-- **Seattle Blockchain Developers** - Bi-monthly
-- **Toronto RChain Community** - Monthly
-
-#### Europe
-- **Berlin Rholang Developers** - Monthly
-- **London Blockchain Programmers** - Monthly
-- **Paris RChain Meetup** - Quarterly
-
-#### Asia
-- **Tokyo Rholang Study Group** - Bi-weekly
-- **Shanghai Blockchain Developers** - Monthly
-- **Bangalore RChain Community** - Monthly
-
-## Past Events
-
-### 2023 Highlights
-
-#### RChain Summit 2023
-- 500+ attendees
-- 30+ technical sessions
-- 10 hands-on workshops
-- [Watch recordings →](https://youtube.com/rchain)
-
-#### Rholang Workshop Tour
-- 8 cities visited
-- 200+ developers trained
-- [Workshop materials →](https://github.com/rchain/workshop-materials)
+Regional meetups are forming based on interest. If you would like to host a local gathering, post in the F1r3fly Discord to coordinate dates and content.
 
 ## Workshops & Training
 
@@ -103,7 +59,7 @@ Join the Rholang community at conferences, meetups, and online events.
 
 ## Speaking Opportunities
 
-Want to present about Rholang or your RChain project?
+Want to present about Rholang or your F1r3fly project?
 
 ### Call for Speakers
 We're always looking for speakers for:
@@ -112,7 +68,7 @@ We're always looking for speakers for:
 - Community calls
 - Tutorial videos
 
-[Submit a proposal →](https://forms.gle/speaker-proposal)
+Share your idea in the F1r3fly Discord `#community` channel to get on the schedule.
 
 ## Organize an Event
 
@@ -124,8 +80,6 @@ We support community organizers with:
 - Swag and materials
 - Potential sponsorship
 
-[Organizer Guide →](https://github.com/rchain/community-events)
-
 ### Resources for Organizers
 - Presentation templates
 - Workshop materials
@@ -135,31 +89,22 @@ We support community organizers with:
 ## Stay Updated
 
 ### Event Calendar
-[Subscribe to our calendar →](webcal://rchain.coop/events.ics)
+Calendar feed will be published after the first event cycle is scheduled.
 
 ### Newsletter
 Monthly updates on events, workshops, and community activities.
 [Subscribe →](#)
 
 ### Social Media
-- Twitter: [@rchain_coop](https://twitter.com/rchain_coop)
-- Discord: [Join server](https://discord.gg/NWkQnfH)
-- Telegram: [Join group](https://t.me/rchain_official)
+- Discord: [Join server](https://discord.gg/nCQxEwUd)
+- GitHub: [F1r3fly-io](https://github.com/F1R3FLY-io)
 
 ## Event Code of Conduct
 
-All RChain and Rholang events follow our [Community Code of Conduct](/community/code-of-conduct).
+All F1r3fly community events follow our [Community Code of Conduct](/community/code-of-conduct).
 
 We are committed to providing a welcoming and harassment-free experience for everyone.
 
 ## Sponsorship
 
-Interested in sponsoring RChain events?
-
-### Benefits
-- Brand visibility
-- Developer engagement
-- Talent recruitment
-- Community goodwill
-
-[Contact us →](mailto:events@rchain.coop)
+Interested in sponsoring F1r3fly events? Reach out in Discord to coordinate with the community team.

@@ -16,4 +16,6 @@ docs/.bundle/
 *.swo
 *~
 
+# Project-specific
 rholang.org/
+.mcp.json

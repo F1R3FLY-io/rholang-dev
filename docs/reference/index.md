@@ -27,25 +27,22 @@ Development tools, IDE configurations, and debugging guides.
 ## Quick Reference
 
 ### Core Concepts
-- [Processes and Channels](language/processes.html)
-- [Pattern Matching](language/pattern-matching.html)
-- [Namespaces](language/namespaces.html)
-- [Unforgeable Names](language/unforgeable-names.html)
+- [Basic Syntax](language/syntax/) - Literals, operators, and program structure
+- [Data Types](language/data-types/) - Integers, strings, collections
+- [Channels and Processes](language/channels/) - Communication and processes
+- [Pattern Matching](language/pattern-matching/) - Destructuring and match expressions
+- [Concurrency Model](language/concurrency/) - Parallelism and synchronization
 
 ### Common APIs
-- [Standard I/O](api/stdio.html)
-- [Collections](api/collections.html)
-- [Cryptography](api/crypto.html)
-- [Registry](api/registry.html)
+- [Standard I/O](/docs/specs/rholang-language-spec/#81-io-urns) - stdout, stderr
+- [Cryptography](/docs/specs/rholang-language-spec/#82-cryptographic-urns) - Hashing, signatures
+- [Registry](/docs/specs/rholang-language-spec/#83-registry-urns) - Name registry
 
 ### Development Tools
-- [RNode CLI](tools/rnode-cli.html)
-- [VS Code Setup](tools/vscode.html)
-- [IntelliJ Setup](tools/intellij.html)
-- [Testing Tools](tools/testing.html)
+- [Tools Overview](tools/) - Development environment setup
 
 ## Additional Resources
 
-- [Formal Specification](https://github.com/rchain/rchain/blob/master/docs/rholang-spec.pdf)
-- [Research Papers](https://rchain.coop/research)
-- [RNode API Swagger](https://rnode.rchain.coop/swagger)
+- [Rholang Language Specification](/docs/specs/rholang-language-spec/)
+- [Version Differences and Gap Analysis](/docs/specs/rholang-version-diff/)
+- [f1r3node Repository](https://github.com/F1R3FLY-io/f1r3node)

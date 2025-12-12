@@ -165,7 +165,7 @@ Use one of the confirmed locations for the sample contract:
  ```bash
  {
    "address": "rnode://1e780e5dfbe0a3d9470a2b414f502d59402e09c2@rnode.bootstrap?protocol=40400&discovery=40404",
-   "version": "RChain Node 1.0.0-SNAPSHOT (767eb331f8f0ab73596b2fbf7503f05b3ca68878)",
+   "version": "F1r3fly Node 1.0.0-SNAPSHOT (767eb331f8f0ab73596b2fbf7503f05b3ca68878)",
    "peers": 3,
    "nodes": 3
  }
@@ -307,7 +307,7 @@ If all checks pass → you’re ready for deployment.
 ```bash
 {
   "address": "rnode://1e780e5dfbe0a3d9470a2b414f502d59402e09c2@rnode.bootstrap?protocol=40400&discovery=40404",
-  "version": "RChain Node 1.0.0-SNAPSHOT (767eb331f8f0ab73596b2fbf7503f05b3ca68878)",
+  "version": "F1r3fly Node 1.0.0-SNAPSHOT (767eb331f8f0ab73596b2fbf7503f05b3ca68878)",
   "peers": 3,
   "nodes": 3
 }

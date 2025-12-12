@@ -109,7 +109,7 @@ rholang-dev/
 - Testing frameworks
 
 ### 4. Community Section
-- **Contribute**: How to contribute to Rholang/RChain
+- **Contribute**: How to contribute to Rholang and the F1r3fly platform
 - **Events**: Conferences, meetups, online events
 - **Showcase**: Projects built with Rholang
 - **Governance**: Cooperative structure, voting, participation

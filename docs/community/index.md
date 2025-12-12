@@ -12,7 +12,7 @@ Welcome to the Rholang community! We're a growing group of developers, researche
 
 ## Get Involved
 
-The Rholang community is part of the larger RChain ecosystem, organized as a cooperative with democratic governance.
+The Rholang community is part of the F1r3fly platform, organized as a cooperative with democratic governance.
 
 ### Community Stats
 - **1,500+** Registered Members
@@ -23,15 +23,15 @@ The Rholang community is part of the larger RChain ecosystem, organized as a coo
 
 ### Discord
 Join our active Discord server for real-time discussions, support, and collaboration.
-[Join Discord](https://discord.gg/NWkQnfH){: .btn .btn-primary }
+[Join Discord](https://discord.gg/nCQxEwUd){: .btn .btn-primary }
 
 ### GitHub
-Contribute to Rholang and RChain development on GitHub.
-[Visit GitHub](https://github.com/rchain){: .btn .btn-outline }
+Contribute to Rholang and F1r3fly development on GitHub.
+[Visit GitHub](https://github.com/F1R3FLY-io){: .btn .btn-outline }
 
 ### Twitter
 Follow us for updates and announcements.
-[@rchain_coop](https://twitter.com/rchain_coop){: .btn .btn-outline }
+[@f1r3fly_io](https://twitter.com){: .btn .btn-outline }
 
 ## Ways to Contribute
 
