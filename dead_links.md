@@ -164,57 +164,7 @@ This report contains all dead links found on the Rholang documentation website a
 
 ## External Dead Links
 
-### DNS Resolution Failures (Domain Does Not Exist)
-
-#### Forum
-- **All pages**: Link text: "Forum" → `https://forum.rchain.coop` (DNS error: ENOTFOUND)
-  - Appears on: Homepage, Getting Started, Language Guide, Blog Post, Tutorials, API Reference, Examples, Learn, Reference, Community, Tools, Installation, Events, Governance, Playground, Contributing
-
-#### Explorer
-- **Tools page**: Link text: "MainNet Explorer" → `https://explorer.rchain.coop/` (DNS error: ENOTFOUND)
-- **Tools page**: Link text: "TestNet Explorer" → `https://testnet-explorer.rchain.coop/` (DNS error: ENOTFOUND)
-
-#### Rholang Cloud
-- **Playground page**: Link text: "Try Rholang Cloud" → `https://rholang.cloud` (DNS error: ENOTFOUND)
-
-#### RNode Swagger
-- **Reference page**: Link text: "RNode API Swagger" → `https://rnode.rchain.coop/swagger` (DNS error: ENOTFOUND)
-
-#### My RChain Wallet
-- **Showcase page**: Link text: "myrchainwallet.com" → `https://myrchainwallet.com` (DNS error: ENOTFOUND)
-  - *Note: Showcase page no longer exists on site, so this reference has been removed*
-
-### SSL Certificate Errors (Hostname Mismatch)
-
-These URLs have SSL certificate issues - they redirect to GitHub but have certificate validation errors:
-
-- **Events page**: Link text: "Register Now" → `https://rchain.coop/conference`
-- **Governance page**: Link text: "Financial Reports" → `https://rchain.coop/financials`
-- **Governance page**: Link text: "Voting Results" → `https://rchain.coop/voting`
-- **Governance page**: Link text: "Join Now" → `https://rchain.coop/membership`
-- **Governance page**: Link text: "Read the Bylaws" → `https://rchain.coop/bylaws`
-- **Reference page**: Link text: "Research Papers" → `https://rchain.coop/research`
-
-### GitHub 404 Errors
-
-#### Repositories
-- **Reference page**: Link text: "Awesome Rholang" → `https://github.com/rchain/awesome-rholang` (404)
-- **Events page**: Link text: "Workshop materials" → `https://github.com/rchain/workshop-materials` (404)
-- **Events page**: Link text: "Organizer Guide" → `https://github.com/rchain/community-events` (404)
-- **Governance page**: Link text: "Submit a Proposal" → `https://github.com/rchain/rcips` (404)
-- **Governance page**: Link text: "Meeting Minutes" → `https://github.com/rchain/board-minutes` (404)
-- **Governance page**: Link text: "Development Roadmap" → `https://github.com/rchain/roadmap` (404)
-- **Playground page**: Link text: "Report an issue" → `https://github.com/rchain/rholang-playground/issues` (404)
-- **Playground page**: Link text: "Request a feature" → `https://github.com/rchain/rholang-playground/issues/new` (404)
-- **Playground page**: Link text: "Contribute" → `https://github.com/rchain/rholang-playground` (404)
-- **Community - Status page**: Link text: "Contributing" → `https://github.com/rchain-community/rchain-status` (404)
-
-#### Documentation
-- **Reference page**: Link text: "Formal Specification" → `https://github.com/rchain/rchain/blob/master/docs/rholang-spec.pdf` (404)
-- **Community page**: Link text: "RChain Code of Conduct" → `https://github.com/rchain/rchain/blob/master/CODE_OF_CONDUCT.md` (404 - security section error)
-
-#### Forms
-- **Events page**: Link text: "Submit a proposal" → `https://forms.gle/speaker-proposal` (404)
+Legacy cooperative domains and repositories were previously listed here (forum, explorers, swagger endpoints, wallets, and governance resources). Those links have been removed to keep the site focused on F1r3fly-managed resources. Replace any remaining external references with F1r3fly endpoints or remove them until verified alternatives exist. Forms and issue trackers should point to active F1r3fly channels.
 
 ---
 
@@ -223,8 +173,8 @@ These URLs have SSL certificate issues - they redirect to GitHub but have certif
 ### High Priority Fixes
 
 1. ✅ **FIXED: Removed all showcase links** - No longer linked from any pages
-2. **Fix forum.rchain.coop DNS** - Critical community resource referenced site-wide
-3. **Update all rchain.coop links** - Certificate issues suggest domain configuration problems
+2. Replace remaining legacy external links with verified F1r3fly endpoints (forum, explorers, governance resources)
+3. Align all external links to F1r3fly-managed domains; remove legacy domains with certificate issues
 4. **Fix /community/contribute/ URL** - Should redirect to /community/contribute.html
 
 ### Medium Priority Fixes
@@ -232,7 +182,7 @@ These URLs have SSL certificate issues - they redirect to GitHub but have certif
 1. Create missing tutorial and example content files (.md files in tutorials/ and examples/)
 2. Create missing reference documentation files (language guide sections, API docs)
 3. Update or remove broken GitHub repository links
-4. Fix or remove broken rchain.coop subdomain links (explorer, rnode)
+4. Fix or remove remaining legacy subdomain links (explorer, node APIs)
 
 ### Low Priority Fixes
 

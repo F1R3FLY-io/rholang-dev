@@ -22,11 +22,10 @@ curl -sSf https://get.rholang.io | sh
 rho run myprogram.rho
 ```
 
-### RNode
-The RChain node software for deploying and executing Rholang smart contracts.
+### F1r3fly Node
+The F1r3fly node software for deploying and executing Rholang smart contracts.
 
-- [Download RNode](https://github.com/rchain/rchain/releases)
-- [RNode Documentation](https://rchain.atlassian.net/wiki/spaces/CORE/pages/428376065/User+guide+for+RNode)
+- [f1r3node Repository](https://github.com/F1R3FLY-io/f1r3node)
 
 ## IDE Support
 
@@ -60,12 +59,6 @@ Try Rholang directly in your browser without any installation.
 - Interactive tutorials
 - Example programs
 - Share code snippets
-
-### RChain Explorer
-Blockchain explorer for viewing deployed contracts and transactions.
-
-- [MainNet Explorer](https://explorer.rchain.coop/)
-- [TestNet Explorer](https://testnet-explorer.rchain.coop/)
 
 ## Development Utilities
 
@@ -104,7 +97,7 @@ Project management and build automation for Rholang applications.
 name: my-project
 version: 1.0.0
 dependencies:
-  - rchain-core: "^0.9.0"
+  - f1r3fly-core: "^0.9.0"
   - collections: "^1.0.0"
 ```
 
@@ -113,7 +106,7 @@ Manage dependencies and libraries for your Rholang projects.
 
 ```bash
 rho install
-rho add rchain-core
+rho add f1r3fly-core
 rho publish
 ```
 
@@ -137,26 +130,15 @@ Analyze resource usage and optimize contract performance.
 ### REST API Client
 HTTP interface for interacting with RNode.
 
-### JavaScript SDK
-```javascript
-const { RNode } = require('@rchain/rnode-client');
-const node = new RNode('http://localhost:40401');
-```
-
-### Python SDK
-```python
-from rchain.client import RClient
-client = RClient('localhost', 40401)
-```
+SDKs and client libraries are documented alongside the node API in the `f1r3node` repository. HTTP/JSON examples are available in the repository's docs and tests.
 
 ## Community Tools
 
 ### Third-party Libraries
-- [Awesome Rholang](https://github.com/rchain/awesome-rholang) - Curated list of Rholang resources
-- Community packages and libraries
+- Community packages and libraries (catalog in progress)
 
 ## Getting Help
 
-- [Tool Documentation](https://rchain.atlassian.net/wiki)
-- [Discord #dev-tools Channel](https://discord.gg/NWkQnfH)
-- [GitHub Issues](https://github.com/rchain/rchain/issues)
+- Tool Documentation: see `f1r3node` repository docs
+- [Discord #dev-tools Channel](https://discord.gg/nCQxEwUd)
+- [GitHub Issues](https://github.com/F1R3FLY-io/f1r3node/issues)

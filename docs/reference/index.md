@@ -46,6 +46,6 @@ Development tools, IDE configurations, and debugging guides.
 
 ## Additional Resources
 
-- [Formal Specification](https://github.com/rchain/rchain/blob/master/docs/rholang-spec.pdf)
-- [Research Papers](https://rchain.coop/research)
-- [RNode API Swagger](https://rnode.rchain.coop/swagger)
+- [Rholang Language Specification](/docs/specs/rholang-language-spec/)
+- [Version Differences and Gap Analysis](/docs/specs/rholang-version-diff/)
+- [f1r3node Repository](https://github.com/F1R3FLY-io/f1r3node)

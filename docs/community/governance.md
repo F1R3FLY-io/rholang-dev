@@ -7,39 +7,26 @@ permalink: /community/governance/
 
 # Governance
 
-How the Rholang and RChain community makes decisions and evolves the platform.
+How the F1r3fly and Rholang community makes decisions and evolves the platform.
 
 ## Governance Structure
 
-### RChain Cooperative
-The RChain Cooperative is the primary governance body overseeing the development and evolution of Rholang and the RChain platform.
+### F1r3fly Cooperative
+The F1r3fly Cooperative is the primary governance body overseeing the development and evolution of Rholang and the F1r3fly platform.
 
 - **Type**: Member-owned cooperative
-- **Founded**: 2017
-- **Members**: 1,000+ worldwide
-- **Mission**: Develop and promote scalable blockchain solutions
+- **Mission**: Develop and promote scalable blockchain solutions built on Rholang
 
-### Board of Directors
-Elected representatives who guide strategic decisions.
-
-- **Elections**: Annual, by member vote
-- **Term**: 2 years
-- **Responsibilities**: Strategic direction, budget approval, major partnerships
-
-[Current Board Members →](#current-board)
+### Board and Technical Leads
+Elected representatives guide strategic decisions, while technical leads coordinate roadmap execution across interpreter, node, and tooling teams. Meetings occur weekly and decisions are published to the community.
 
 ### Technical Governance
 
 #### Core Development Team
-Responsible for the Rholang language specification and implementation.
-
-- **Lead**: Greg Meredith, Chief Scientist
-- **Team Size**: 15+ developers
-- **Meeting**: Weekly technical calls
+Responsible for the Rholang language specification, interpreter, and runtime.
 
 #### Architecture Review Board
-Reviews and approves significant technical changes.
-
+Reviews and approves significant technical changes:
 - Protocol upgrades
 - Language feature additions
 - Security improvements
@@ -47,70 +34,47 @@ Reviews and approves significant technical changes.
 
 ## Decision Making
 
-### Improvement Proposals (RCIPs)
+### Improvement Proposals (FIPS)
 
-The RChain Improvement Proposal process for suggesting changes.
+The F1r3fly Improvement Proposal process (FIPS) is used for suggesting changes across the stack.
 
 #### Proposal Types
-1. **Language (RCIP-L)**: Changes to Rholang syntax or semantics
-2. **Protocol (RCIP-P)**: Changes to consensus or networking
-3. **Standard (RCIP-S)**: Application standards and interfaces
-4. **Meta (RCIP-M)**: Process and governance changes
+1. **Language**: Changes to Rholang syntax or semantics
+2. **Protocol**: Changes to consensus or networking
+3. **Standard**: Application standards and interfaces
+4. **Process**: Governance changes
 
 #### Proposal Process
 ```
 Draft → Discussion → Review → Vote → Implementation
 ```
 
-[Submit a Proposal →](https://github.com/rchain/rcips)
+[FIPS Repository →](https://github.com/F1R3FLY-io/FIPS)
 
 ### Voting Mechanisms
 
 #### Member Voting
-- **Who**: All cooperative members
+- **Who**: Cooperative members
 - **What**: Board elections, major decisions
 - **How**: One member, one vote
-- **Platform**: Secure online voting system
 
 #### Token-weighted Voting
 - **Who**: REV token holders
 - **What**: Protocol parameters, treasury proposals
 - **How**: Votes weighted by token holdings
-- **Platform**: On-chain governance contracts
 
 #### Technical Committee Voting
 - **Who**: Core developers and technical committee
 - **What**: Technical proposals, code reviews
-- **How**: Consensus among committee members
-- **Platform**: GitHub discussions and votes
+- **How**: Consensus among committee members via GitHub discussions and votes
 
 ## Working Groups
 
 ### Active Working Groups
-
-#### Language Design WG
-- **Focus**: Rholang syntax and features
-- **Meets**: Bi-weekly
-- **Lead**: Mike Stay
-- [Join →](#)
-
-#### Security WG
-- **Focus**: Security audits and best practices
-- **Meets**: Monthly
-- **Lead**: Security Team
-- [Join →](#)
-
-#### Documentation WG
-- **Focus**: Improving documentation and tutorials
-- **Meets**: Weekly
-- **Lead**: Community volunteers
-- [Join →](#)
-
-#### Community Outreach WG
-- **Focus**: Events, education, marketing
-- **Meets**: Bi-weekly
-- **Lead**: Marketing Team
-- [Join →](#)
+- Language Design WG — Rholang syntax and features (bi-weekly)
+- Security WG — Security audits and best practices (monthly)
+- Documentation WG — Improving documentation and tutorials (weekly)
+- Community Outreach WG — Events, education, marketing (bi-weekly)
 
 ### Starting a Working Group
 1. Identify a clear focus area
@@ -122,82 +86,30 @@ Draft → Discussion → Review → Vote → Implementation
 ## Funding & Treasury
 
 ### Development Fund
-Resources allocated for platform development.
-
-- **Annual Budget**: $X million
-- **Allocation Process**: Quarterly planning
-- **Oversight**: Board and treasury committee
+Resources allocated for platform development with quarterly planning and cooperative oversight.
 
 ### Grant Programs
-
-#### Developer Grants
-- **Amount**: $5,000 - $50,000
-- **Focus**: Tools, libraries, applications
-- **Application**: [Apply here →](#)
-
-#### Research Grants
-- **Amount**: $10,000 - $100,000
-- **Focus**: Academic research, formal verification
-- **Application**: [Apply here →](#)
-
-#### Community Grants
-- **Amount**: $1,000 - $10,000
-- **Focus**: Events, education, content
-- **Application**: [Apply here →](#)
+- Developer grants for tools, libraries, applications
+- Research grants for formal verification and academic work
+- Community grants for events, education, and content
 
 ### Bounty Program
-Rewards for specific development tasks.
-
-- Bug fixes: $100 - $5,000
-- Features: $500 - $10,000
-- Security issues: $1,000 - $50,000
-
-[View Open Bounties →](https://github.com/rchain/bounties)
+Rewards for specific development tasks (bugs, features, security fixes). Current bounties are tracked in the F1r3fly GitHub organization.
 
 ## Transparency
 
 ### Public Records
-- [Meeting Minutes](https://github.com/rchain/board-minutes)
-- [Financial Reports](https://rchain.coop/financials)
-- [Development Roadmap](https://github.com/rchain/roadmap)
-- [Voting Results](https://rchain.coop/voting)
+- Meeting minutes and decisions (published to the F1r3fly GitHub organization)
+- Financial and roadmap updates (shared with cooperative members)
 
 ### Communication Channels
-- **Governance Forum**: [forum.rchain.coop](https://forum.rchain.coop)
-- **Discord**: [#governance channel](https://discord.gg/NWkQnfH)
-- **Monthly Newsletter**: [Subscribe →](#)
-
-## Current Board Members
-
-### Board of Directors 2024
-
-#### Alice Johnson - President
-- Background: Distributed systems expert
-- Term: 2023-2025
-- Focus: Strategic partnerships
-
-#### Bob Chen - Vice President
-- Background: Blockchain researcher
-- Term: 2024-2026
-- Focus: Technical direction
-
-#### Carol Smith - Secretary
-- Background: Open source advocate
-- Term: 2023-2025
-- Focus: Community growth
-
-#### David Kim - Treasurer
-- Background: Financial technology
-- Term: 2024-2026
-- Focus: Financial sustainability
+- **Governance Forum**: via Discord `#governance` channel (invite: https://discord.gg/nCQxEwUd)
+- **Monthly Newsletter**: Shared through community announcements on Discord
 
 ## Get Involved
 
 ### Become a Member
-Join the RChain Cooperative to participate in governance.
-
-- **Annual Membership**: $20
-- **Lifetime Membership**: $200
+Join the F1r3fly Cooperative to participate in governance. Membership options and fees are published in the cooperative onboarding materials.
 - **Benefits**: Voting rights, early access, member events
 
 [Join Now →](https://rchain.coop/membership)

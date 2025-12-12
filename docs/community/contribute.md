@@ -45,20 +45,21 @@ Help make Rholang more accessible:
 ## Development Setup
 
 ### Prerequisites
-- Java 11 or higher
-- Scala 2.12+
+- Ruby 3.x with Bundler
+- Node.js (for tooling/asset builds)
 - Git
 
 ### Building from Source
 ```bash
-git clone https://github.com/rchain/rchain.git
-cd rchain
-sbt compile
+git clone https://github.com/F1R3FLY-io/rholang-dev.git
+cd rholang-dev
+bundle install
+bundle exec jekyll build
 ```
 
 ### Running Tests
 ```bash
-sbt test
+bundle exec jekyll build
 ```
 
 ## Contribution Guidelines
@@ -91,10 +92,10 @@ Contributors are recognized in:
 
 ## Getting Help
 
-- **Discord**: #development channel
-- **GitHub Issues**: For bug reports and feature requests
-- **Developer Forum**: Technical discussions
+- **Discord**: #development channel (invite: https://discord.gg/nCQxEwUd)
+- **GitHub Issues**: For bug reports and feature requests in this repository
+- **Developer Forum**: Technical discussions (via Discord threads)
 
 ## Code of Conduct
 
-We follow the [RChain Code of Conduct](https://github.com/rchain/rchain/blob/master/CODE_OF_CONDUCT.md). Please be respectful and inclusive in all interactions.
+We follow the F1r3fly community code of conduct. Please be respectful and inclusive in all interactions.
