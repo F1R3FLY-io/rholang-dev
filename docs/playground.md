@@ -149,24 +149,15 @@ You can embed the playground in your own documentation or tutorials:
 
 ## Local Development
 
-Want to run the playground locally?
-
-```bash
-git clone https://github.com/rchain/rholang-playground
-cd rholang-playground
-npm install
-npm start
-```
-
-Visit `http://localhost:3000` to use the playground locally.
+Want to run the playground locally? A F1r3fly-hosted playground repository and setup guide will be published soon. In the meantime, use the hosted sandbox above.
 
 ## Feedback & Issues
 
 Found a bug or have a suggestion for the playground?
 
-- [Report an issue](https://github.com/rchain/rholang-playground/issues)
-- [Request a feature](https://github.com/rchain/rholang-playground/issues/new)
-- [Contribute](https://github.com/rchain/rholang-playground)
+- [Report an issue](https://github.com/F1R3FLY-io/rholang-dev/issues)
+- [Request a feature](https://github.com/F1R3FLY-io/rholang-dev/issues/new)
+- [Contribute](https://github.com/F1R3FLY-io/rholang-dev)
 
 ## Alternative Playgrounds
 

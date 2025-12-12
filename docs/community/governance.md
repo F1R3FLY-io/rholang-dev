@@ -112,7 +112,7 @@ Rewards for specific development tasks (bugs, features, security fixes). Current
 Join the F1r3fly Cooperative to participate in governance. Membership options and fees are published in the cooperative onboarding materials.
 - **Benefits**: Voting rights, early access, member events
 
-[Join Now →](https://rchain.coop/membership)
+[Join Now →](#membership)
 
 ### Participate in Governance
 - Attend public meetings
@@ -123,10 +123,9 @@ Join the F1r3fly Cooperative to participate in governance. Membership options an
 ### Stay Informed
 - [Governance Calendar →](#)
 - [Subscribe to Updates →](#)
-- [Read the Bylaws →](https://rchain.coop/bylaws)
+- Bylaws are available to members via the cooperative portal
 
 ## Contact
 
-**General Inquiries**: governance@rchain.coop  
-**Board of Directors**: board@rchain.coop  
-**Technical Committee**: tech@rchain.coop
+**General Inquiries**: governance@f1r3fly.io  
+**Community Questions**: [Discord #governance](https://discord.gg/nCQxEwUd)

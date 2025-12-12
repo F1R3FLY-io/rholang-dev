@@ -93,7 +93,7 @@ curl http://127.0.0.1:40403/status
 **Expected output:**
 
 ```
-{"address":"rnode://505a9aeff537e99122baa8ddc03b354010528b04@rnode.bootstrap?protocol=40400&discovery=40404","version":"RChain Node 1.0.0-SNAPSHOT","peers":4,"nodes":4}
+{"address":"rnode://505a9aeff537e99122baa8ddc03b354010528b04@rnode.bootstrap?protocol=40400&discovery=40404","version":"F1r3fly Node 1.0.0-SNAPSHOT","peers":4,"nodes":4}
 ```
 
 You should see **4 peers** and **4 nodes**, which matches the default configuration.
@@ -494,7 +494,7 @@ http://127.0.0.1:40403/health
 
 Expected response:
 ```bash
-{"address":"rnode://1e780e5dfbe0a3d9470a2b414f502d59402e09c2@rnode.bootstrap?protocol=40400&discovery=40404","version":"RChain Node 1.0.0-SNAPSHOT (dcf5fa8c263a3389f7595b0f0ebcd6e57b059330)","peers":3,"nodes":4}
+{"address":"rnode://1e780e5dfbe0a3d9470a2b414f502d59402e09c2@rnode.bootstrap?protocol=40400&discovery=40404","version":"F1r3fly Node 1.0.0-SNAPSHOT (dcf5fa8c263a3389f7595b0f0ebcd6e57b059330)","peers":3,"nodes":4}
 ```
 
 >⚠️ **WARNING**
@@ -549,7 +549,7 @@ Developers often keep the same state across multiple sessions to simulate contin
 #### Ready to deploy
 Once status check returns
 ```bash
-{"address":"rnode://1e780e5dfbe0a3d9470a2b414f502d59402e09c2@rnode.bootstrap?protocol=40400&discovery=40404","version":"RChain Node 1.0.0-SNAPSHOT (dcf5fa8c263a3389f7595b0f0ebcd6e57b059330)","peers":3,"nodes":4}
+{"address":"rnode://1e780e5dfbe0a3d9470a2b414f502d59402e09c2@rnode.bootstrap?protocol=40400&discovery=40404","version":"F1r3fly Node 1.0.0-SNAPSHOT (dcf5fa8c263a3389f7595b0f0ebcd6e57b059330)","peers":3,"nodes":4}
 ```
 
 your shard is live. You can now proceed to Part II and deploy Rholang contracts.
@@ -608,7 +608,7 @@ curl http://127.0.0.1:40403/status
 
 *Expected:* 
 ```bash
-{"address":"rnode://1e780e5dfbe0a3d9470a2b414f502d59402e09c2@rnode.bootstrap?protocol=40400&discovery=40404","version":"RChain Node 1.0.0-SNAPSHOT (e30fc2ceb2c98c133d265e0748085c7ee9307b9b)","peers":3,"nodes":4}
+{"address":"rnode://1e780e5dfbe0a3d9470a2b414f502d59402e09c2@rnode.bootstrap?protocol=40400&discovery=40404","version":"F1r3fly Node 1.0.0-SNAPSHOT (e30fc2ceb2c98c133d265e0748085c7ee9307b9b)","peers":3,"nodes":4}
 ```
 ![Health check endpoint output](./images/p1-health-check-endpoint-output.png)
 
@@ -688,7 +688,7 @@ curl http://127.0.0.1:40403/status
 
 **Expected:**
 ```bash
-{"address":"rnode://...@rnode.bootstrap?protocol=40400&discovery=40404","version":"RChain Node ...","peers":3,"nodes":4}
+{"address":"rnode://...@rnode.bootstrap?protocol=40400&discovery=40404","version":"F1r3fly Node ...","peers":3,"nodes":4}
 ```
 
 **Optional health probe:**

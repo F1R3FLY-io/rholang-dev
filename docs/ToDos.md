@@ -118,13 +118,14 @@ Task tracker for completing the Rholang documentation site.
 ## p1 - Core Language Documentation
 
 ### TASK-110: Author updated language specification
-- **Status**: pending
+- **Status**: completed
 - **Goal**: Fill out `docs/specs/rholang-language-spec.md` with the current grammar and semantics, using the BNFC grammar and Rust interpreter as sources.
 - **Acceptance Criteria**:
   - Sections for syntax, operational semantics, name/process distinction, cost model, and concurrency primitives are populated
   - Examples reflect current interpreter behavior and pass against reference interpreter
   - Version and compatibility notes included
 - **Blocked by**: TASK-101
+- **Completed**: 2025-12-11 - Expanded from 488-line outline to 2173-line comprehensive spec
 
 ### TASK-111: Update core language docs to match new spec
 - **Status**: pending
@@ -439,6 +440,7 @@ Task tracker for completing the Rholang documentation site.
 ## Completed
 
 - **TASK-100 - TASK-107 (p0)**: Language deltas captured in `docs/specs/rholang-version-diff.md`, doc inventory in `docs/specs/doc-update-plan.md`, source catalog in `docs/specs/source-artifacts.md`, and BNFC-style draft in `docs/specs/rholang-bnfc-draft.md`.
+- **TASK-110 (p1)**: Complete language specification authored in `docs/specs/rholang-language-spec.md` (2173 lines) covering lexical structure, syntax (17 precedence levels), operational semantics (reduction rules, structural equivalence, pattern matching), concurrency primitives, type system with bundles, cost model, and complete system URN reference.
 
 ---
 

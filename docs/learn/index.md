@@ -46,8 +46,8 @@ Start your journey with Rholang, from basic concepts to advanced techniques.
 - [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang) - IDE support
 
 ### Community Support
-- [Discord](https://discord.gg/NWkQnfH) - Get help from the community
-- [Forum](https://forum.rchain.coop) - Technical discussions
+- [Discord](https://discord.gg/nCQxEwUd) - Get help from the community
+- Community forum and knowledge base (coming soon)
 
 ## Next Steps
 
