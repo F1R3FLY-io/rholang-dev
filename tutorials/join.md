@@ -85,9 +85,6 @@ What code would Alice need to "par in" to retract her launch command.
 - [x] `for (x <- aliceLaunch){ Nil }`
 
 
-I've explored the concept of joins in the context of the famous dining philosophers problem in [this blog post](https://www.rchain.coop/blog/rholang-vs-the-dining-philosophers/).
-
-
 
 In `for (x <- y; a <- b){ Nil }`, which channel must be sent on first?
 - [ ] y

@@ -7,7 +7,7 @@ mr_status:
   title: ""
   description: ""
   labels: []
-last_updated: 2025-02-19
+last_updated: 2025-12-11
 ---
 
 # Documentation Tasks
@@ -354,19 +354,19 @@ Task tracker for completing the Rholang documentation site.
   - Hardware requirements
 - **Blocked by**: TASK-051, TASK-102
 
-### TASK-053: Create rchain-network-docker page
+### TASK-053: Create f1r3fly-network-docker page
 - **Status**: pending
 - **Goal**: Document Docker-based network setup
-- **File**: `docs/rchain-network-docker.md`
+- **File**: `docs/f1r3fly-network-docker.md`
 - **Acceptance Criteria**:
   - Multi-node Docker setup
   - Networking configuration
 - **Blocked by**: TASK-022, TASK-102
 
-### TASK-054: Create rchain-network-terraform page
+### TASK-054: Create f1r3fly-network-terraform page
 - **Status**: pending
 - **Goal**: Document Terraform deployment
-- **File**: `docs/rchain-network-terraform.md`
+- **File**: `docs/f1r3fly-network-terraform.md`
 - **Acceptance Criteria**:
   - Terraform modules
   - Cloud deployment guide
@@ -438,13 +438,14 @@ Task tracker for completing the Rholang documentation site.
 
 ## Completed
 
-_None yet_
+- **TASK-100 - TASK-107 (p0)**: Language deltas captured in `docs/specs/rholang-version-diff.md`, doc inventory in `docs/specs/doc-update-plan.md`, source catalog in `docs/specs/source-artifacts.md`, and BNFC-style draft in `docs/specs/rholang-bnfc-draft.md`.
 
 ---
 
 ## Notes
 
+- p0 groundwork (tasks 100-107) completed on 2025-12-11; see Completed for deliverables
 - Tutorials section is complete with 21 files
 - Core language docs (TASK-010 through TASK-016) should be prioritized as they're most useful to developers
-- Consider whether some RNode-specific docs should link to external RChain resources instead of duplicating
+- Consider whether some RNode-specific docs should link to external F1r3fly resources instead of duplicating
 - Repository content is legacy (scraped from rholang.org); align everything to the current interpreter in `f1r3node` (Rust) and the BNFC grammar before publishing updates

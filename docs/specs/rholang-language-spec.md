@@ -55,7 +55,7 @@ This specification covers:
 
 ### 1.2 Compatibility Notes
 
-This specification supersedes legacy RChain documentation. Key differences from legacy docs are tracked in [rholang-version-diff.md](./rholang-version-diff.md).
+This specification supersedes legacy public documentation. Key differences from legacy docs are tracked in [rholang-version-diff.md](./rholang-version-diff.md).
 
 ---
 

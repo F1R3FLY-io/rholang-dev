@@ -66,4 +66,4 @@ TODO This section is incomplete
 Rholang has primitives for hashing and signature verification
 
 Show how to do a simple signature verified contract on a public name
-Link to RSign and RChain-API
+Link to RSign and network API endpoints

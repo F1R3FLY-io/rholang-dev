@@ -15,8 +15,8 @@ In order to run the Rholang snippets in this tutorial, you will need some kind o
 ### VSCode Plugin
 This is the Visual Studio Code extension for the Rholang programming language. It has support for syntax highlighting and code evaluation with error highlighting. [Marketplace VSCode](https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang)
 
-### RChain Cloud
-Evaluate Rholang code in the cloud and test your dApp at [RChain Cloud](https://try-rholang-22.netlify.app/).
+### Rholang Playground
+Evaluate Rholang code in the cloud and test your dApp at [Rholang Playground](https://try-rholang-22.netlify.app/).
 
 ### Local Node
 Another way to run Rholang code is to start up your own local RNode and use its Rholang interpreter. For that RNode has to be installed. There are two modes to run Rholang code locally: repl and eval. With repl you can type Rholang code directly into the console and execute it. With eval you are running a `.rho` file and execute this file. Tutorial for local setup is [here](/docs/rholang/).
@@ -51,4 +51,4 @@ Another way to run Rholang code is to start up your own local RNode and use its 
 Once you've completed these tutorials, you'll be ready to:
 - Build your own dApps using the [dApp development guide](/dapps/)
 - Explore the complete [language documentation](/docs/rholang/)
-- Join the community on [Discord](https://discord.gg/NWkQnfH)
+- Join the community on [Discord](https://discord.gg/nCQxEwUd)

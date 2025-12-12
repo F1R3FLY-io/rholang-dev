@@ -5,7 +5,7 @@ title: Home
 
 <div class="disclaimer-section">
   <div class="disclaimer-content">
-    <p><strong>Community Documentation</strong> - This site is maintained by F1r3fly.io Limited Cooperative Association and is not officially affiliated with the RChain Cooperative. For official RChain documentation, visit <a href="https://developer.rchain.coop">developer.rchain.coop</a>.</p>
+    <p><strong>Community Documentation</strong> - This site is maintained by F1r3fly.io Limited Cooperative Association for the F1r3fly platform.</p>
   </div>
 </div>
 
@@ -22,7 +22,6 @@ title: Home
       <h4>IDEs</h4>
       <ul>
         <li><a href="https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang">Visual Studio Code Plugin</a></li>
-        <li><a href="https://try-rholang-22.netlify.app/">RChain Cloud</a></li>
         <li><a href="https://github.com/tgrospic/rholang-idea">Intellij Plugin</a></li>
       </ul>
     </div>
@@ -39,7 +38,7 @@ title: Home
 
     <div class="feature">
       <h3>Deploy</h3>
-      <p>Propose smart-contract to the global distributed RChain network</p>
+      <p>Propose smart-contract to the global distributed F1r3fly network</p>
       <ul>
         <li>Types of interaction bounded by namespaces</li>
         <li>Sharding for validators</li>
@@ -138,43 +137,8 @@ new helloworld, stdout(`rho:io:stdout`) in {
   </div>
 
   <div class="resource-item">
-    <h3>Rholang Cloud</h3>
-    <p>Try to write Rholang code and compile it online</p>
+    <h3>Rholang Playground</h3>
+    <p>Try Rholang code in a browser-based sandbox</p>
     <a href="https://try-rholang-22.netlify.app/">Read more</a>
-  </div>
-
-  <div class="resource-item">
-    <h3>Official RChain Development Updates</h3>
-    <p>Read the latest development updates from RChain</p>
-    <a href="https://rchain.atlassian.net/wiki/spaces/CORE/overview">Read more</a>
-  </div>
-
-  <div class="resource-item">
-    <h3>Official RChain Developer Page</h3>
-    <p>Official resources for developers</p>
-    <a href="https://developer.rchain.coop/">Read more</a>
-  </div>
-
-  <div class="resource-item">
-    <h3>Official RChain Blog</h3>
-    <p>Keep up to date with official RChain blog posts</p>
-    <a href="https://blog.rchain.coop">Read more</a>
-  </div>
-
-  <div class="resource-item">
-    <h3>RChain Wallets</h3>
-    <p>Community driven RChain Wallets</p>
-    <ul>
-      <li><a href="https://myrchainwallet.com">MyRChainWallet</a></li>
-      <li><a href="https://wenode.io/rui/">Rui Wallet</a></li>
-      <li><a href="https://icapo.app/">Capo Wallet</a></li>
-      <li><a href="http://app.onechain.one/appstart_en.html">ONE Wallet</a></li>
-    </ul>
-  </div>
-
-  <div class="resource-item">
-    <h3>RChain Blockchain Explorer</h3>
-    <p>Watch the network live</p>
-    <a href="http://revdefine.io/">Read more</a>
   </div>
 </div>

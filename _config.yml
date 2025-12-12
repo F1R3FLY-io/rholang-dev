@@ -30,11 +30,6 @@ navigation:
 github_username: F1r3fly-io
 discord_url: https://discord.gg/nCQxEwUd
 
-# Official RChain links
-rchain_github: rchain
-rchain_twitter: rchain_coop
-rchain_discord: https://discord.gg/NWkQnfH
-
 # Code highlighting
 kramdown:
   syntax_highlighter: rouge

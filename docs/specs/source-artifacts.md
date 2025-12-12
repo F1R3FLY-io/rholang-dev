@@ -22,6 +22,14 @@ This document catalogs the public source artifacts from `f1r3node` used for Rhol
 
 ---
 
+## Related Documents
+
+- [rholang-version-diff.md](./rholang-version-diff.md) — change log and gap analysis derived from these artifacts
+- [rholang-bnfc-draft.md](./rholang-bnfc-draft.md) — BNFC-style grammar draft translated from the Tree-sitter snapshot
+- [doc-update-plan.md](./doc-update-plan.md) — page inventory prioritized using this source catalog
+
+---
+
 ## Grammar Artifacts
 
 ### BNFC Grammar (Primary Reference)

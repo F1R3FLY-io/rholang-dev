@@ -7,7 +7,7 @@
 - This project will use Jekyll or similar static site generator for GitHub Pages deployment
 - Focus on clear, accessible documentation with practical examples and learning resources
 - All code produced by the F1r3fly-io organization uses the Apache License
-- The code and the documentation in this repository and organzation are developed by the **F1r3fly.io Limited Cooperative Association** -- not the RCHAIN Coop
+- The code and the documentation in this repository and organization are developed by the **F1r3fly.io Limited Cooperative Association**.
 
 ## Project Structure
 - Keep the current project structure up to date in the [README.md](./README.md)
@@ -56,7 +56,7 @@
 - **Language Fundamentals**: Process calculus concepts, channel operations, pattern matching
 - **Syntax Reference**: Complete grammar and language constructs
 - **RSpace++**: Execution environment concepts and execution model
-- **Blockchain Integration**: RChain platform integration and deployment
+- **Blockchain Integration**: F1r3fly platform integration and deployment
 - **Smart Contracts**: Contract development patterns and examples
 - **Concurrency Patterns**: Parallel and concurrent programming techniques
 - **Standard Library**: Built-in functions and utilities

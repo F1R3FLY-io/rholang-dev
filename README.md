@@ -57,14 +57,12 @@ We welcome contributions to improve the documentation! Please:
 - **F1r3fly.io GitHub**: [github.com/F1r3fly-io](https://github.com/F1r3fly-io/)
 - **F1r3fly Blockchain**: [github.com/F1R3FLY-io/f1r3fly](https://github.com/F1R3FLY-io/f1r3fly/)
 - **OSLF (Formal Verification)**: [github.com/F1R3FLY-io/oslf](https://github.com/F1R3FLY-io/oslf)
-- **RChain Cloud**: [try-rholang-22.netlify.app](https://try-rholang-22.netlify.app/)
+- **Rholang Playground**: [try-rholang-22.netlify.app](https://try-rholang-22.netlify.app/)
 - **VS Code Plugin**: [Marketplace](https://marketplace.visualstudio.com/items?itemName=tgrospic.rholang)
-- **Official RChain Discord**: [discord.gg/NWkQnfH](https://discord.gg/NWkQnfH)
-- **Official RChain GitHub**: [github.com/rchain/rchain](https://github.com/rchain/rchain)
 
 ## About This Project
 
-This documentation site is developed and maintained by the **F1r3fly.io Limited Cooperative Association**. This is an independent community effort to provide comprehensive Rholang documentation and is not officially affiliated with the RChain Cooperative.
+This documentation site is developed and maintained by the **F1r3fly.io Limited Cooperative Association** for the F1r3fly platform.
 
 ## License
 

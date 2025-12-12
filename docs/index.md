@@ -1,16 +1,16 @@
 ---
 layout: page
 title: Development
-description: Complete guide to RChain development and Rholang programming
+description: Complete guide to F1r3fly development and Rholang programming
 ---
 
 # Development
 
-Nodes are the basis for the RChain network. The network layer is the lowest level component in the architecture that will eventually support RChain's large-scale blockchain operations. Pre-release versions of RNode are available for users to explore. More information about the roadmap, key milestones and release plans is available at [https://developer.rchain.coop](https://developer.rchain.coop).
+Nodes are the basis for the F1r3fly network. The network layer is the lowest level component in the architecture that will eventually support F1r3fly's large-scale blockchain operations. Pre-release versions of RNode are available for users to explore. More information about the roadmap, key milestones and release plans is available at [https://github.com/F1R3FLY-io/f1r3fly](https://github.com/F1R3FLY-io/f1r3fly).
 
 ## Who is this guide for?
 
-This document is a quick start guide for users to install and run the software for the purpose of evaluating Rholang and/or using the RChain public mainnet. Detailed information about the software for users and developers is available on [https://github.com/rchain/rchain](https://github.com/rchain/rchain).
+This document is a quick start guide for users to install and run the software for the purpose of evaluating Rholang and/or using the F1r3fly public mainnet. Detailed information about the software for users and developers is available on [https://github.com/F1R3FLY-io](https://github.com/F1R3FLY-io).
 
 ## Documentation Sections
 
@@ -44,8 +44,7 @@ This document is a quick start guide for users to install and run the software f
 - [Current State of the Protocol](/docs/cbc-protocol/)
 - [What are Validators](/docs/bonding-network/)
 - [Run a Standalone Validator](/docs/bonding-validator/)
-- [Run a RChain Network (Docker)](/docs/rchain-network-docker/)
-- [Run a RChain Network (Terraform)](/docs/rchain-network-terraform/)
+- [Run a F1r3fly Network (Docker)](/docs/f1r3fly-network-docker/)
 
 ### Sharding
 - [Sharding Proposal](/docs/sharding-proposal/)

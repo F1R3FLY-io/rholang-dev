@@ -9,15 +9,16 @@ last_updated: 2025-12-11
 # Documentation Update Plan
 
 This document maps all existing documentation pages to the updated Rholang specification, flagging outdated sections and defining required updates. Based on analysis from TASK-100 (version diff) and TASK-101 (language spec outline).
+Source baseline: `f1r3node` `rust/dev` commit `1ba0835e` cataloged in [source-artifacts.md](./source-artifacts.md); grammar snapshot is recorded in [rholang-bnfc-draft.md](./rholang-bnfc-draft.md).
 
 ## Executive Summary
 
 The documentation set was scraped from legacy rholang.org content (Joshy Orndorff tutorials). Most core language concepts remain valid, but the following areas require updates:
 
-1. **Infrastructure references** - RChain-specific content needs F1r3fly updates
+1. **Infrastructure references** - Legacy platform content needs F1r3fly updates
 2. **Cost model** - Phlogiston/REV references need Rust interpreter alignment
 3. **System URNs** - New AI URNs and undocumented URNs need coverage
-4. **Validator/consensus** - RChain Casper references need F1r3fly consensus updates
+4. **Validator/consensus** - Legacy Casper references need F1r3fly consensus updates
 
 ---
 
@@ -39,7 +40,7 @@ The documentation set was scraped from legacy rholang.org content (Joshy Orndorf
 
 | Page | Status | Priority | Owner | Notes |
 |------|--------|----------|-------|-------|
-| `docs/index.md` | **update** | p1 | - | Update branding from RChain to F1r3fly; fix broken links |
+| `docs/index.md` | **update** | p1 | - | Align branding with F1r3fly; fix broken links |
 | `docs/rholang/index.md` | **update** | p1 | - | Update F1r3fly branding; verify OSLF reference |
 
 ### Specs (`docs/specs/`)
@@ -94,8 +95,8 @@ The documentation set was scraped from legacy rholang.org content (Joshy Orndorf
 | `docs/cbc-protocol.md` | **create** | p2 | TASK-102 | Protocol status (F1r3fly consensus) |
 | `docs/bonding-network.md` | **create** | p2 | TASK-102 | Validator overview |
 | `docs/bonding-validator.md` | **create** | p2 | TASK-051 | Validator setup |
-| `docs/rchain-network-docker.md` | **create** | p2 | TASK-022 | Multi-node Docker |
-| `docs/rchain-network-terraform.md` | **create** | p2 | TASK-102 | Cloud deployment |
+| `docs/f1r3fly-network-docker.md` | **create** | p2 | TASK-022 | Multi-node Docker |
+| `docs/f1r3fly-network-terraform.md` | **create** | p2 | TASK-102 | Cloud deployment |
 
 ### Sharding (to be created)
 
@@ -156,7 +157,7 @@ All tutorials are from the Joshy Orndorff series. Core Rholang syntax is compati
 
 | Page | Status | Priority | Notes |
 |------|--------|----------|-------|
-| `dapps/index.md` | **update** | p2 | RChain references need F1r3fly updates; CodeSandbox links may be stale |
+| `dapps/index.md` | **update** | p2 | Legacy references need F1r3fly updates; CodeSandbox links may be stale |
 | `dapps/examples/` | **create** | p3 | Directory referenced but does not exist |
 
 ---
@@ -165,7 +166,7 @@ All tutorials are from the Joshy Orndorff series. Core Rholang syntax is compati
 
 ### `docs/index.md` Changes Required
 
-1. Update header branding (RChain -> F1r3fly)
+1. Update header branding to F1r3fly
 2. Fix all broken internal links (currently point to pages that don't exist)
 3. Add link to language specification (`docs/specs/rholang-language-spec.md`)
 4. Add link to version differences (`docs/specs/rholang-version-diff.md`)
@@ -177,7 +178,7 @@ Current structure references many non-existent pages. Recommended approach:
 
 1. Phase 1: Link only to existing, verified content
 2. Phase 2: Add new pages as they are created per this plan
-3. Phase 3: Remove or redirect legacy RChain-specific pages
+3. Phase 3: Remove or redirect legacy platform-specific pages
 
 ---
 
@@ -232,8 +233,8 @@ TASK-102 (this plan) ---------> TASK-111 (update core docs)
 ### High Risk
 
 1. **Cost model accuracy** - Legacy phlogiston/REV costs may differ from Rust interpreter
-2. **Consensus differences** - F1r3fly consensus differs from RChain Casper
-3. **External tool references** - VSCode plugin, RChain Cloud may be unmaintained
+2. **Consensus differences** - F1r3fly consensus differs from legacy Casper
+3. **External tool references** - VSCode plugin, legacy cloud sandbox may be unmaintained
 
 ### Medium Risk
 

@@ -12,12 +12,12 @@ dApps are a growing opportunity for disrupting decentralized applications. This 
 
 - Free to use for everybody
 - No login required
-- Evaluate your Rholang code (read only) for free on the RChain testnet
-- Evaluate your Rholang code (REV cost) on the RChain mainnet
+- Evaluate your Rholang code (read only) for free against public test endpoints
+- Deploy your Rholang code (REV cost) on the F1r3fly mainnet
 
 ## Write Rholang Code
 
-The language in which you write your dApp is Rholang, which is being executed decentralized on the RChain network.
+The language in which you write your dApp is Rholang, which is executed on the decentralized F1r3fly network.
 
 ### Getting Started
 
@@ -26,9 +26,9 @@ The language in which you write your dApp is Rholang, which is being executed de
 3. Insert your Rholang code after the key `template:`
    - If you have variables, which you want to fill from a UI and should be inserted into the Rholang code, write this variable after the key `fields:`
 
-## Execute Your Rholang Code on the RChain Network
+## Execute Your Rholang Code on the F1r3fly Network
 
-To execute your Rholang code on the RChain network you can choose between **testnet** or **mainnet**:
+To execute your Rholang code on the F1r3fly network you can choose between **testnet** or **mainnet**:
 
 After that you can use **Explore** or **Deploy**.
 
@@ -110,5 +110,5 @@ new NonNegativeNumber, stdout(`rho:io:stdout`) in {
 
 - Explore more [examples](/dapps/examples/)
 - Read the [development documentation](/docs/)
-- Join the community on [Discord](https://discord.gg/NWkQnfH)
-- Try the [RChain Cloud](https://try-rholang-22.netlify.app/) environment
+- Join the community on [Discord](https://discord.gg/nCQxEwUd)
+- Try the [Rholang Playground](https://try-rholang-22.netlify.app/) environment

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Rholang Version Differences
-description: Changes between legacy RChain docs and current F1r3fly interpreter
+description: Changes between legacy documentation and the current F1r3fly interpreter
 last_updated: 2025-12-11
 status: draft
 ---
@@ -15,8 +15,10 @@ This document inventories syntax and semantic changes between the legacy documen
 | Source | Location |
 |--------|----------|
 | BNFC Grammar | `f1r3node/rholang/src/main/bnfc/rholang_mercury.cf` |
+| Tree-sitter Grammar | `f1r3node/rholang/src/main/tree_sitter/src/grammar.json` (derived in [rholang-bnfc-draft.md](./rholang-bnfc-draft.md)) |
 | Rust Interpreter | `f1r3node/rholang/src/rust/interpreter/` |
-| Scala Interpreter (legacy reference) | `f1r3node/rholang/src/main/scala/coop/rchain/rholang/interpreter/` |
+| Scala Interpreter (legacy reference) | Legacy Scala implementation in `f1r3node` (`src/main/scala/.../rholang/interpreter/`) |
+| Snapshot Catalog | [source-artifacts.md](./source-artifacts.md) (`rust/dev` @ `1ba0835e`) |
 
 ---
 
@@ -60,7 +62,7 @@ The Rust interpreter (`rho_runtime.rs`, `system_processes.rs`) provides these UR
 | `rho:block:data` | Block data access | undocumented |
 | `rho:casper:invalidBlocks` | Invalid block list | undocumented |
 | `rho:rev:address` | REV address operations | undocumented |
-| `rho:rchain:deployerId:ops` | Deployer ID operations | undocumented |
+| `rho:deployerId:ops` | Deployer ID operations (legacy prefix in runtime) | undocumented |
 
 #### AI Services (F1r3fly Extension)
 | URN | Description | Status |
@@ -145,7 +147,7 @@ The Rust interpreter (`rho_runtime.rs`, `system_processes.rs`) provides these UR
 
 1. **Cost Model**: The Rust interpreter uses different cost accounting (see `accounting/costs.rs`). Specific cost values may differ from legacy Scala implementation.
 
-2. **AI URNs**: The `rho:ai:*` URNs are F1r3fly extensions not present in original RChain.
+2. **AI URNs**: The `rho:ai:*` URNs are F1r3fly extensions not present in earlier public releases.
 
 3. **Execution Environment**: Rust interpreter runs on RSpace++ instead of original RSpace.
 
@@ -168,7 +170,7 @@ The Rust interpreter (`rho_runtime.rs`, `system_processes.rs`) provides these UR
 - Multi-node deployment examples
 
 ### Likely Breaking
-- References to RChain-specific infrastructure
+- References to legacy infrastructure
 - REV/phlogiston cost examples (may differ)
 - Validator bonding examples (F1r3fly consensus differs)
 
@@ -278,7 +280,7 @@ Based on the gap analysis, the following spec sections need additions:
 1. [ ] Validate all tutorial code against Rust interpreter
 2. [ ] Document new AI URNs with examples
 3. [ ] Update cost accounting documentation
-4. [ ] Clarify RChain vs F1r3fly differences
+4. [ ] Clarify F1r3fly differences versus legacy documentation
 5. [ ] Add feature flag documentation if applicable
 6. [ ] Document undocumented operators (`~`, `/\`, `\/`, `--`)
 7. [ ] Complete system URN reference (crypto, registry, blockchain)
@@ -292,7 +294,7 @@ Based on the gap analysis, the following spec sections need additions:
 
 This section documents the version evolution of Rholang from its foundational release through planned future versions.
 
-### Version 1.0: Foundation (Legacy/RChain)
+### Version 1.0: Foundation (Legacy)
 
 The original Rholang implementation based on the Mercury grammar. Core features:
 
@@ -303,7 +305,7 @@ The original Rholang implementation based on the Mercury grammar. Core features:
 - Basic system URNs
 
 **Grammar**: `rholang_mercury.cf`
-**Interpreter**: Scala-based (legacy RChain)
+**Interpreter**: Scala-based (legacy implementation)
 
 ### Version 1.1: Syntactic Sugar (Implemented)
 
