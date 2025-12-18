@@ -37,6 +37,7 @@ Another way to run Rholang code is to start up your own local RNode and use its 
 - [Recursion](/tutorials/recursion/) - Write recursive processes.
 - [Game Example](/tutorials/game-example/) - Walk through a complete example.
 - [Off Chain](/tutorials/off-chain/) - Interact with external systems.
+- [Crypto URNs](/tutorials/crypto-urns/) - Hashing and signature verification.
 - [Cheat Sheet](/tutorials/cheat-sheet/) - Quick reference for syntax.
 - Rho Lambda series:
   - [Introduction](/tutorials/introduction/)
@@ -52,3 +53,5 @@ Once you've completed these tutorials, you'll be ready to:
 - Build your own dApps using the [dApp development guide](/dapps/)
 - Explore the complete [language documentation](/docs/rholang/)
 - Join the community on [Discord](https://discord.gg/nCQxEwUd)
+
+If you're coming from an older monolithic tutorial, see [Legacy Tutorial Mapping](/tutorials/legacy-tutorial-mapping/).

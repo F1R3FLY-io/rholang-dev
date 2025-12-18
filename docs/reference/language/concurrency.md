@@ -374,3 +374,4 @@ new done in {
 - [Join Tutorial](/tutorials/join/) - Join patterns
 - [State Channels Tutorial](/tutorials/state-channels/) - State management
 - [Object Capabilities](/tutorials/object-capabilities/) - Capability patterns
+- [Normalization](/reference/language/normalization/) - Canonical form for hashing and replay

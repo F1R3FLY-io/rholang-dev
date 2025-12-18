@@ -64,6 +64,7 @@ new counter, stdout(`rho:io:stdout`) in {
 - [Channels and Processes](channels/) - Names, channels, sending, receiving
 - [Pattern Matching](pattern-matching/) - Destructuring and match expressions
 - [Concurrency Model](concurrency/) - Parallelism, synchronization, patterns
+- [Normalization](normalization/) - Canonical form for hashing and replay
 
 ## Additional Resources
 

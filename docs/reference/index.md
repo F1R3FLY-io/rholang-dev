@@ -32,6 +32,7 @@ Development tools, IDE configurations, and debugging guides.
 - [Channels and Processes](language/channels/) - Communication and processes
 - [Pattern Matching](language/pattern-matching/) - Destructuring and match expressions
 - [Concurrency Model](language/concurrency/) - Parallelism and synchronization
+- [Normalization](language/normalization/) - Canonical form for hashing and replay
 
 ### Common APIs
 - [Standard I/O](/docs/specs/rholang-language-spec/#81-io-urns) - stdout, stderr
