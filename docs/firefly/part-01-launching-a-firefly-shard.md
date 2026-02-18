@@ -26,19 +26,6 @@ We assume you:
 If prerequisites feel unclear — don’t worry.  
 This chapter provides everything needed to run Firefly with confidence.
 
----
-
-**Firefly shard architecture**
-
-![Shard Architecture](./images/p1shard-architecture.png)
-
-*Diagram – illustration only, not executable code*
-
-> 📝 **NOTE**
-> All examples in this guide use the Docker Compose setup from f1r3node/docker/.
-> Alternative paths (CLI, Kubernetes/Helm) are provided in **Appendix A** (advanced/optional).
-
----
 
 ## TL;DR QuickStart (for experts)
 
