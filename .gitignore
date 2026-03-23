@@ -19,3 +19,4 @@ docs/.bundle/
 # Project-specific
 rholang.org/
 .mcp.json
+deploys/
